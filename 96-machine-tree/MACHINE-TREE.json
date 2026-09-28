@@ -1,0 +1,570 @@
+{
+  "tree": "ANDI_MACHINE_KNOWLEDGE_PROVENANCE_TREE",
+  "version": "3.0",
+  "generated": "2026-09-21",
+  "status": "INTERIM / REVERSIBLE / NON-CANDIDATE",
+  "activity_source": "90-registers/ACTIVITY_STATE.json — exponential 30-day time decay; activity is guidance only, independent of authority/CIF/retention",
+  "size_note": "actual_manufactured_bytes = real file size in this archive. original_source_bytes = size of full original. record_type clarifies what each file is.",
+  "node_count": 22,
+  "relationship_count": 22,
+  "nodes": [
+    {
+      "id": "CAN-GOV-001",
+      "title": "Operating Standard",
+      "type": "governance",
+      "authority": "governing_rule",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 45667b original via SRC-004.",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "original_source_bytes": 45667,
+      "projects": [
+        "ANDI_GLOBAL"
+      ],
+      "path": "01-governance/OPERATING-STANDARD.md",
+      "human_summary": "Universal operational checklist",
+      "actual_manufactured_bytes": 200,
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-GOV-002",
+      "title": "Working Profile",
+      "type": "governance",
+      "authority": "governing_rule",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 23813b original via SRC-005.",
+      "source_ids": [
+        "SRC-005"
+      ],
+      "original_source_bytes": 23813,
+      "projects": [
+        "ANDI_GLOBAL"
+      ],
+      "path": "01-governance/WORKING-PROFILE.md",
+      "human_summary": "Chris-Andi collaboration model",
+      "actual_manufactured_bytes": 197,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-GOV-003",
+      "title": "Preservation Spec",
+      "type": "governance",
+      "authority": "governing_rule",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 15369b original via SRC-001.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "original_source_bytes": 15369,
+      "projects": [
+        "ANDI_PRESERVATION"
+      ],
+      "path": "01-governance/PRESERVATION-SPEC.md",
+      "human_summary": "Preservation governing specification",
+      "actual_manufactured_bytes": 199,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-001",
+      "title": "Car Compact Current State",
+      "type": "current_state",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "decomposed_extract",
+      "note": "Substantive compact front-door from 264742b SRC-002.",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "original_source_bytes": 264742,
+      "projects": [
+        "ANDI_CAR"
+      ],
+      "path": "10-andi-car/current/COMPACT-CURRENT-STATE.md",
+      "human_summary": "Small front-door for Car current truth",
+      "depends_on": [
+        "CAN-GOV-001",
+        "CAN-GOV-002"
+      ],
+      "actual_manufactured_bytes": 1132,
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-CAR-010",
+      "title": "Chronological Spine",
+      "type": "navigation_register",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 18340b original via SRC-003.",
+      "source_ids": [
+        "SRC-003"
+      ],
+      "original_source_bytes": 18340,
+      "projects": [
+        "ANDI_CAR"
+      ],
+      "path": "10-andi-car/current/CHRONOLOGICAL-SPINE.md",
+      "human_summary": "18 major Car routes classified by status",
+      "actual_manufactured_bytes": 207,
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-CAR-002",
+      "title": "Direction Refinements",
+      "type": "architecture",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "summary_index",
+      "note": "Summary/index of architecture principles from SRC-002. ~2KB index, not full text.",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "original_source_bytes": 264742,
+      "projects": [
+        "ANDI_CAR"
+      ],
+      "path": "10-andi-car/architecture/DIRECTION-REFINEMENTS.md",
+      "human_summary": "Architecture principles index",
+      "actual_manufactured_bytes": 442,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-003",
+      "title": "Guest Review Adjudications",
+      "type": "historical",
+      "authority": "historical_record",
+      "status": "HISTORICAL",
+      "record_type": "summary_index",
+      "note": "Summary/index of adjudications from SRC-002. ~1.3KB index.",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "original_source_bytes": 264742,
+      "projects": [
+        "ANDI_CAR"
+      ],
+      "path": "10-andi-car/history/GUEST-REVIEW-ADJUDICATIONS.md",
+      "human_summary": "Index of Gemini review adjudications + DAVE V0 results",
+      "actual_manufactured_bytes": 448,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-004",
+      "title": "Transport Evolution",
+      "type": "historical",
+      "authority": "historical_record",
+      "status": "HISTORICAL",
+      "record_type": "chronological_index",
+      "note": "Chronological topic index (~3.9KB). Navigation aid, NOT full history. Full text in SRC-002 original.",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "original_source_bytes": 264742,
+      "projects": [
+        "ANDI_CAR"
+      ],
+      "path": "10-andi-car/history/TRANSPORT-EVOLUTION.md",
+      "human_summary": "Chronological index of transport history",
+      "actual_manufactured_bytes": 628,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-011",
+      "title": "Grounding Implementation",
+      "type": "current_state",
+      "authority": "working_material",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 8725b via SRC-008.",
+      "source_ids": [
+        "SRC-008"
+      ],
+      "original_source_bytes": 8725,
+      "projects": [
+        "ANDI_CAR"
+      ],
+      "path": "10-andi-car/current/GROUNDING-IMPLEMENTATION.md",
+      "human_summary": "grounding.py package — IGEL inspection pending",
+      "actual_manufactured_bytes": 209,
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-CAR-012",
+      "title": "IGEL Hardware",
+      "type": "current_state",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "summary_with_key_facts",
+      "note": "Summary ~1KB with key facts. Full 31585b via SRC-014.",
+      "source_ids": [
+        "SRC-014"
+      ],
+      "original_source_bytes": 31585,
+      "projects": [
+        "ANDI_CAR",
+        "IGEL"
+      ],
+      "path": "10-andi-car/igel/IGEL-HARDWARE.md",
+      "human_summary": "IGEL: Ryzen R1505G, 16GB, Debian 13, SSH, Dropbox responder",
+      "actual_manufactured_bytes": 366,
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-CAR-013",
+      "title": "Known Next Job",
+      "type": "planning",
+      "authority": "working_material",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 10350b via SRC-018.",
+      "source_ids": [
+        "SRC-018"
+      ],
+      "original_source_bytes": 10350,
+      "projects": [
+        "ANDI_CAR",
+        "ANDI_LAB"
+      ],
+      "path": "10-andi-car/current/KNOWN-NEXT-JOB.md",
+      "human_summary": "Controlled PowerShell access for test execution",
+      "actual_manufactured_bytes": 197,
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-BM-001",
+      "title": "Benchmark Status Register",
+      "type": "status_register",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 15943b via SRC-034.",
+      "source_ids": [
+        "SRC-034"
+      ],
+      "original_source_bytes": 15943,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/BENCHMARK-STATUS-REGISTER.md",
+      "human_summary": "Benchmark front door. FROZEN. Two blockers remain.",
+      "actual_manufactured_bytes": 357,
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-BM-002",
+      "title": "Executable Fixture Package",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 11309b via SRC-033.",
+      "source_ids": [
+        "SRC-033"
+      ],
+      "original_source_bytes": 11309,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/EXECUTABLE-FIXTURE-PACKAGE.md",
+      "human_summary": "Execution manifest for Benchmark v1.2",
+      "actual_manufactured_bytes": 363,
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-BM-003",
+      "title": "Proponent Pack",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 18159b via SRC-024.",
+      "source_ids": [
+        "SRC-024"
+      ],
+      "original_source_bytes": 18159,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/PROPONENT-PACK.md",
+      "human_summary": "Frozen base prompt + 3 candidate appendices",
+      "actual_manufactured_bytes": 366,
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-BM-004",
+      "title": "Phase 5 Contract",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 11763b via SRC-025.",
+      "source_ids": [
+        "SRC-025"
+      ],
+      "original_source_bytes": 11763,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/PHASE-5-CONTRACT.md",
+      "human_summary": "Frozen destructive recovery mechanics",
+      "actual_manufactured_bytes": 367,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-BM-005",
+      "title": "Execution Policy",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 9704b via SRC-026.",
+      "source_ids": [
+        "SRC-026"
+      ],
+      "original_source_bytes": 9704,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/EXECUTION-POLICY.md",
+      "human_summary": "Luna/Sol, seed 7319, 32K ceiling, N=3",
+      "actual_manufactured_bytes": 347,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-BM-006",
+      "title": "Implementation Clarifications",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 5156b via SRC-021.",
+      "source_ids": [
+        "SRC-021"
+      ],
+      "original_source_bytes": 5156,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/IMPLEMENTATION-CLARIFICATIONS.md",
+      "human_summary": "Opus lab implementation clarifications",
+      "actual_manufactured_bytes": 363,
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-BM-007",
+      "title": "Benchmark Design / v1.2",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 30253b via SRC-029.",
+      "source_ids": [
+        "SRC-029"
+      ],
+      "original_source_bytes": 30253,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/BENCHMARK-DESIGN-CHECKPOINT.md",
+      "human_summary": "Primary v1.2 methodology source",
+      "actual_manufactured_bytes": 358,
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-BM-008",
+      "title": "Phase 0 Freeze",
+      "type": "frozen_benchmark",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 6280b via SRC-023.",
+      "source_ids": [
+        "SRC-023"
+      ],
+      "original_source_bytes": 6280,
+      "projects": [
+        "STORAGE_BENCHMARK"
+      ],
+      "path": "20-storage-benchmark/frozen/PHASE-0-FREEZE.md",
+      "human_summary": "Formal Phase 0 freeze",
+      "actual_manufactured_bytes": 358,
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-LAB-001",
+      "title": "Lab MK1 Plan",
+      "type": "project_plan",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 13538b via SRC-037.",
+      "source_ids": [
+        "SRC-037"
+      ],
+      "original_source_bytes": 13538,
+      "projects": [
+        "ANDI_LAB"
+      ],
+      "path": "30-lab-mk1/current/LAB-PLAN.md",
+      "human_summary": "Lab concept, boundaries, staged build plan",
+      "actual_manufactured_bytes": 368,
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-LAB-002",
+      "title": "Operator & Recovery Record",
+      "type": "operator_manual",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 27602b via SRC-044.",
+      "source_ids": [
+        "SRC-044"
+      ],
+      "original_source_bytes": 27602,
+      "projects": [
+        "ANDI_LAB"
+      ],
+      "path": "30-lab-mk1/current/OPERATOR-RECORD.md",
+      "human_summary": "Primary Lab manual. 28KB original.",
+      "actual_manufactured_bytes": 356,
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-LAB-003",
+      "title": "Translator Mfg Package",
+      "type": "frozen_specification",
+      "authority": "frozen_specification",
+      "status": "FROZEN",
+      "record_type": "pointer_to_original",
+      "note": "Pointer. Full 23953b via SRC-040.",
+      "source_ids": [
+        "SRC-040"
+      ],
+      "original_source_bytes": 23953,
+      "projects": [
+        "ANDI_LAB"
+      ],
+      "path": "30-lab-mk1/current/TRANSLATOR-MANUFACTURING-PACKAGE.md",
+      "human_summary": "Frozen translator manufacturing specification",
+      "actual_manufactured_bytes": 390,
+      "activity_band": "HOT"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "CAN-GOV-001",
+      "to": "CAN-CAR-001",
+      "type": "governs"
+    },
+    {
+      "from": "CAN-GOV-001",
+      "to": "CAN-BM-001",
+      "type": "governs"
+    },
+    {
+      "from": "CAN-GOV-001",
+      "to": "CAN-LAB-001",
+      "type": "governs"
+    },
+    {
+      "from": "CAN-GOV-002",
+      "to": "CAN-CAR-001",
+      "type": "governs"
+    },
+    {
+      "from": "CAN-CAR-001",
+      "to": "CAN-CAR-002",
+      "type": "references"
+    },
+    {
+      "from": "CAN-CAR-001",
+      "to": "CAN-CAR-010",
+      "type": "references"
+    },
+    {
+      "from": "CAN-CAR-001",
+      "to": "CAN-CAR-012",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-CAR-001",
+      "to": "CAN-BM-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-CAR-012",
+      "to": "CAN-LAB-001",
+      "type": "used_by"
+    },
+    {
+      "from": "CAN-BM-001",
+      "to": "CAN-BM-002",
+      "type": "references"
+    },
+    {
+      "from": "CAN-BM-002",
+      "to": "CAN-BM-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-BM-002",
+      "to": "CAN-BM-004",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-BM-002",
+      "to": "CAN-BM-005",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-BM-002",
+      "to": "CAN-BM-006",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-BM-002",
+      "to": "CAN-BM-007",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-BM-002",
+      "to": "CAN-BM-008",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-LAB-001",
+      "to": "CAN-LAB-002",
+      "type": "followed_by"
+    },
+    {
+      "from": "CAN-LAB-002",
+      "to": "CAN-LAB-003",
+      "type": "produced"
+    },
+    {
+      "from": "CAN-CAR-003",
+      "to": "CAN-CAR-001",
+      "type": "evidence_for"
+    },
+    {
+      "from": "CAN-CAR-004",
+      "to": "CAN-CAR-001",
+      "type": "evidence_for"
+    },
+    {
+      "from": "CAN-CAR-013",
+      "to": "CAN-LAB-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CAN-CAR-011",
+      "to": "CAN-CAR-012",
+      "type": "depends_on"
+    }
+  ]
+}

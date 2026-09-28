@@ -1,0 +1,340 @@
+{
+  "register": "CANONICAL_RECORD_REGISTER",
+  "version": "3.0",
+  "generated": "2026-09-21",
+  "status": "INTERIM / REVERSIBLE / NON-CANDIDATE",
+  "activity_source": "90-registers/ACTIVITY_STATE.json — exponential 30-day time decay; activity is guidance only, independent of authority/CIF/retention",
+  "total": 22,
+  "records": [
+    {
+      "id": "CAN-GOV-001",
+      "title": "Operating Standard",
+      "type": "governance",
+      "record_type": "pointer_to_original",
+      "authority": "governing_rule",
+      "status": "CURRENT",
+      "path": "01-governance/OPERATING-STANDARD.md",
+      "actual_bytes": 200,
+      "original_bytes": 45667,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-GOV-002",
+      "title": "Working Profile",
+      "type": "governance",
+      "record_type": "pointer_to_original",
+      "authority": "governing_rule",
+      "status": "CURRENT",
+      "path": "01-governance/WORKING-PROFILE.md",
+      "actual_bytes": 197,
+      "original_bytes": 23813,
+      "source_ids": [
+        "SRC-005"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-GOV-003",
+      "title": "Preservation Spec",
+      "type": "governance",
+      "record_type": "pointer_to_original",
+      "authority": "governing_rule",
+      "status": "CURRENT",
+      "path": "01-governance/PRESERVATION-SPEC.md",
+      "actual_bytes": 199,
+      "original_bytes": 15369,
+      "source_ids": [
+        "SRC-001"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-001",
+      "title": "Car Compact Current State",
+      "type": "current_state",
+      "record_type": "decomposed_extract",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "10-andi-car/current/COMPACT-CURRENT-STATE.md",
+      "actual_bytes": 1132,
+      "original_bytes": 264742,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-CAR-010",
+      "title": "Chronological Spine",
+      "type": "navigation_register",
+      "record_type": "pointer_to_original",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "10-andi-car/current/CHRONOLOGICAL-SPINE.md",
+      "actual_bytes": 207,
+      "original_bytes": 18340,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-CAR-002",
+      "title": "Direction Refinements",
+      "type": "architecture",
+      "record_type": "summary_index",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "10-andi-car/architecture/DIRECTION-REFINEMENTS.md",
+      "actual_bytes": 442,
+      "original_bytes": 264742,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-003",
+      "title": "Guest Review Adjudications",
+      "type": "historical",
+      "record_type": "summary_index",
+      "authority": "historical_record",
+      "status": "HISTORICAL",
+      "path": "10-andi-car/history/GUEST-REVIEW-ADJUDICATIONS.md",
+      "actual_bytes": 448,
+      "original_bytes": 264742,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-004",
+      "title": "Transport Evolution",
+      "type": "historical",
+      "record_type": "chronological_index",
+      "authority": "historical_record",
+      "status": "HISTORICAL",
+      "path": "10-andi-car/history/TRANSPORT-EVOLUTION.md",
+      "actual_bytes": 628,
+      "original_bytes": 264742,
+      "source_ids": [
+        "SRC-002"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-CAR-011",
+      "title": "Grounding Implementation",
+      "type": "current_state",
+      "record_type": "pointer_to_original",
+      "authority": "working_material",
+      "status": "CURRENT",
+      "path": "10-andi-car/current/GROUNDING-IMPLEMENTATION.md",
+      "actual_bytes": 209,
+      "original_bytes": 8725,
+      "source_ids": [
+        "SRC-008"
+      ],
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-CAR-012",
+      "title": "IGEL Hardware",
+      "type": "current_state",
+      "record_type": "summary_with_key_facts",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "10-andi-car/igel/IGEL-HARDWARE.md",
+      "actual_bytes": 366,
+      "original_bytes": 31585,
+      "source_ids": [
+        "SRC-014"
+      ],
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-CAR-013",
+      "title": "Known Next Job",
+      "type": "planning",
+      "record_type": "pointer_to_original",
+      "authority": "working_material",
+      "status": "CURRENT",
+      "path": "10-andi-car/current/KNOWN-NEXT-JOB.md",
+      "actual_bytes": 197,
+      "original_bytes": 10350,
+      "source_ids": [
+        "SRC-018"
+      ],
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-BM-001",
+      "title": "Benchmark Status Register",
+      "type": "status_register",
+      "record_type": "pointer_to_original",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "20-storage-benchmark/frozen/BENCHMARK-STATUS-REGISTER.md",
+      "actual_bytes": 357,
+      "original_bytes": 15943,
+      "source_ids": [
+        "SRC-034"
+      ],
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-BM-002",
+      "title": "Executable Fixture Package",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/EXECUTABLE-FIXTURE-PACKAGE.md",
+      "actual_bytes": 363,
+      "original_bytes": 11309,
+      "source_ids": [
+        "SRC-033"
+      ],
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-BM-003",
+      "title": "Proponent Pack",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/PROPONENT-PACK.md",
+      "actual_bytes": 366,
+      "original_bytes": 18159,
+      "source_ids": [
+        "SRC-024"
+      ],
+      "activity_band": "WARM"
+    },
+    {
+      "id": "CAN-BM-004",
+      "title": "Phase 5 Contract",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/PHASE-5-CONTRACT.md",
+      "actual_bytes": 367,
+      "original_bytes": 11763,
+      "source_ids": [
+        "SRC-025"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-BM-005",
+      "title": "Execution Policy",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/EXECUTION-POLICY.md",
+      "actual_bytes": 347,
+      "original_bytes": 9704,
+      "source_ids": [
+        "SRC-026"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-BM-006",
+      "title": "Implementation Clarifications",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/IMPLEMENTATION-CLARIFICATIONS.md",
+      "actual_bytes": 363,
+      "original_bytes": 5156,
+      "source_ids": [
+        "SRC-021"
+      ],
+      "activity_band": "COLD"
+    },
+    {
+      "id": "CAN-BM-007",
+      "title": "Benchmark Design / v1.2",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/BENCHMARK-DESIGN-CHECKPOINT.md",
+      "actual_bytes": 358,
+      "original_bytes": 30253,
+      "source_ids": [
+        "SRC-029"
+      ],
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-BM-008",
+      "title": "Phase 0 Freeze",
+      "type": "frozen_benchmark",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_benchmark",
+      "status": "FROZEN",
+      "path": "20-storage-benchmark/frozen/PHASE-0-FREEZE.md",
+      "actual_bytes": 358,
+      "original_bytes": 6280,
+      "source_ids": [
+        "SRC-023"
+      ],
+      "activity_band": "COOL"
+    },
+    {
+      "id": "CAN-LAB-001",
+      "title": "Lab MK1 Plan",
+      "type": "project_plan",
+      "record_type": "pointer_to_original",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "30-lab-mk1/current/LAB-PLAN.md",
+      "actual_bytes": 368,
+      "original_bytes": 13538,
+      "source_ids": [
+        "SRC-037"
+      ],
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-LAB-002",
+      "title": "Operator & Recovery Record",
+      "type": "operator_manual",
+      "record_type": "pointer_to_original",
+      "authority": "current_authoritative",
+      "status": "CURRENT",
+      "path": "30-lab-mk1/current/OPERATOR-RECORD.md",
+      "actual_bytes": 356,
+      "original_bytes": 27602,
+      "source_ids": [
+        "SRC-044"
+      ],
+      "activity_band": "HOT"
+    },
+    {
+      "id": "CAN-LAB-003",
+      "title": "Translator Mfg Package",
+      "type": "frozen_specification",
+      "record_type": "pointer_to_original",
+      "authority": "frozen_specification",
+      "status": "FROZEN",
+      "path": "30-lab-mk1/current/TRANSLATOR-MANUFACTURING-PACKAGE.md",
+      "actual_bytes": 390,
+      "original_bytes": 23953,
+      "source_ids": [
+        "SRC-040"
+      ],
+      "activity_band": "HOT"
+    }
+  ]
+}

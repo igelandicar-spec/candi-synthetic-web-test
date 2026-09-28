@@ -1,0 +1,825 @@
+[
+  {
+    "inv_id": "SRC-001",
+    "path": "00 \u2014 GOVERNANCE & FRONT DOOR/ANDI \u2014 Project History & Preservation \u2014 Governing Specification \u2014 19 September 2026.md",
+    "folder": "00 \u2014 GOVERNANCE & FRONT DOOR",
+    "filename": "ANDI \u2014 Project History & Preservation \u2014 Governing Specification \u2014 19 September 2026.md",
+    "original_bytes": 15369,
+    "original_sha256": "8302449E28B3944F8C0A8321A21AA73CC86AD8E8F9782912EAA4322DFFECF639",
+    "type": "governing_specification",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_PRESERVATION",
+      "ANDI_CAR"
+    ],
+    "authority": "governing_rule",
+    "status": "CURRENT",
+    "description": "Governing specification for the preservation/history project. Defines human historical record, machine provenance record, archivist rules, safety boundaries. Includes post-benchmark storage research idea (payload/record-card/history-graph) and uninvestigated ideas incubator concept.",
+    "carrier": 6
+  },
+  {
+    "inv_id": "SRC-002",
+    "path": "00 \u2014 GOVERNANCE & FRONT DOOR/Andi Car \u2014 Authoritative Current State.md",
+    "folder": "00 \u2014 GOVERNANCE & FRONT DOOR",
+    "filename": "Andi Car \u2014 Authoritative Current State.md",
+    "original_bytes": 264742,
+    "original_sha256": "2274F5B4A2701C135416FAEA4EAAA35BB3AFC158CA0B4C439F5C7FADB2A74BAC",
+    "type": "authoritative_master",
+    "date": "2026-09-09",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "current_authoritative_master",
+    "status": "CURRENT",
+    "description": "THE primary authoritative current state record for Andi Car. Contains project objective, core maxims, current state, all confirmed facts, decisions, rejected routes, open questions, constraints, development history from 6 Sep through 19 Sep 2026. Massively append-only \u2014 264KB. Contains the full chronological decision/architecture evolution.",
+    "carrier": 1,
+    "flags": [
+      "LARGEST_FILE",
+      "PRIMARY_AUTHORITY",
+      "APPEND_HEAVY"
+    ]
+  },
+  {
+    "inv_id": "SRC-003",
+    "path": "00 \u2014 GOVERNANCE & FRONT DOOR/Andi Car \u2014 Chronological Spine & Status Register \u2014 Current.md",
+    "folder": "00 \u2014 GOVERNANCE & FRONT DOOR",
+    "filename": "Andi Car \u2014 Chronological Spine & Status Register \u2014 Current.md",
+    "original_bytes": 18340,
+    "original_sha256": "70C8112BEBC661CED36FBC4EEA588F96BA996B579BA1C80AE020066F6A0317AD",
+    "type": "navigation_register",
+    "date": "2026-09-15",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "current_authoritative_master",
+    "status": "CURRENT",
+    "description": "Chronological navigation layer classifying major Andi Car routes as CURRENT/PROVED/SUPERSEDED/FAILED/PARKED/RESEARCHED. Contains 18 numbered spine entries plus probe-AI recovery test, storage review task, preservation wormhole. Essential for understanding route history.",
+    "carrier": 6
+  },
+  {
+    "inv_id": "SRC-004",
+    "path": "00 \u2014 GOVERNANCE & FRONT DOOR/Andi Operating Standard \u2014 Always-On Behaviour.md",
+    "folder": "00 \u2014 GOVERNANCE & FRONT DOOR",
+    "filename": "Andi Operating Standard \u2014 Always-On Behaviour.md",
+    "original_bytes": 45667,
+    "original_sha256": "CA0B913819AD46983DA4EAEBB9ECBD302ADB8F51B5BC4B4E2FD39DD139D9C0C6",
+    "type": "governing_rule",
+    "date": "2026-09-05",
+    "project": [
+      "ANDI_GLOBAL"
+    ],
+    "authority": "governing_rule",
+    "status": "CURRENT",
+    "description": "Single operational checklist for Andi behaviour. Covers priority/source hierarchy, topic checks, future local-primary rule, update triggers, learning/code teaching, troubleshooting, wheel check, filing rules, session/memory, CI/CIF definitions, DAVE quarantine, visible check notifications, provenance-gated pass rule, periodic grounding, no-half-save rule, Full CIF execution contract, heartbeat, car-verified grounding, Work handoff rules, Execution CIF, two-counter health model, pre-commit enforcement.",
+    "carrier": 4,
+    "flags": [
+      "UNIVERSAL_GOVERNANCE",
+      "ALWAYS_LOAD"
+    ]
+  },
+  {
+    "inv_id": "SRC-005",
+    "path": "00 \u2014 GOVERNANCE & FRONT DOOR/Andi Working Profile \u2014 Project Strategy & Learning Approach.md",
+    "folder": "00 \u2014 GOVERNANCE & FRONT DOOR",
+    "filename": "Andi Working Profile \u2014 Project Strategy & Learning Approach.md",
+    "original_bytes": 23813,
+    "original_sha256": "0B229A6867BB22263F7D0B9B6A46DC94495AB9D47122472D2DB12711D3667CB7",
+    "type": "governing_rule",
+    "date": "2026-09-05",
+    "project": [
+      "ANDI_GLOBAL"
+    ],
+    "authority": "governing_rule",
+    "status": "CURRENT",
+    "description": "Live cross-project working model of Chris and Chris-Andi collaboration. 17 numbered sections covering objectives, project selection, development approach, division of labour, commercial exploration, code teaching, parts sourcing, core relationship, communication style, trust/mistakes, problem solving, rabbit holes, learning style, workflow friction, conversation pacing, practical identity, replacement-driver acceptance test.",
+    "carrier": 4,
+    "flags": [
+      "UNIVERSAL_GOVERNANCE",
+      "ALWAYS_LOAD"
+    ]
+  },
+  {
+    "inv_id": "SRC-006",
+    "path": "00 \u2014 GOVERNANCE & FRONT DOOR/README \u2014 EXTERNAL ARCHIVAL CORPUS \u2014 BOUNDARIES.md",
+    "folder": "00 \u2014 GOVERNANCE & FRONT DOOR",
+    "filename": "README \u2014 EXTERNAL ARCHIVAL CORPUS \u2014 BOUNDARIES.md",
+    "original_bytes": 2560,
+    "original_sha256": "B8B9855DDA51ECEE6C04EAB86A605839819D0375B4EBFE75F4996D8DCA60ABDA",
+    "type": "corpus_readme",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_PRESERVATION"
+    ],
+    "authority": "governing_rule",
+    "status": "CURRENT",
+    "description": "Corpus README. Defines folder map, strict exclusions (DAVE, candidate private, no rewriting), authority rules, portable format notes, required outputs, process order.",
+    "carrier": 6
+  },
+  {
+    "inv_id": "SRC-007",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Car \u2014 Exact Transcript \u2014 CIF Read Did Not Produce Compliance \u2014 13 September 2026.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 6577,
+    "original_sha256": "3D13B7710E001065560A8D75E5D8F04F17761D0DC58E5A8287E05138E909409D",
+    "type": "diagnostic_evidence",
+    "date": "2026-09-13",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Verbatim transcript of CIF-read-without-compliance failure. Driver read rules via Full CIF then failed to execute Checkpoint 0 measurement. Key finding: CIF read + AI confirmation \u2260 reliable instruction execution. First-class continuity failure evidence.",
+    "carrier": 3
+  },
+  {
+    "inv_id": "SRC-008",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Car \u2014 Grounding Implementation Checkpoint \u2014 IGEL Inspection Pending.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 8725,
+    "original_sha256": "8E4B2DFE0AD665F740252BFD1C4683DBE6B7222CE343190FC3E87E47BCB5B573",
+    "type": "implementation_checkpoint",
+    "date": "2026-09-09",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Factual record of grounding.py package: status/reset commands, thresholds.json (amber 1200s, red 1800s), test suite. Created locally on Windows, transfer archive prepared, IGEL installation NOT observed. Live IGEL state UNKNOWN. Contains local SHA-256 reference hashes for 4 files.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-009",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Car \u2014 Guest Review Evidence \u2014 Gemini Benchmark Design \u2014 6 September 2026.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 10836,
+    "original_sha256": "BDC70B415832A88CCA1F7B820D32A014C6D5E749D0BDC99AF7B01A6549B58E95",
+    "type": "guest_review_evidence",
+    "date": "2026-09-06",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Verbatim Gemini benchmark design review. 10-layer benchmark specification: properties to measure, test families, difficulty levels, ground truth tuples, scoring dimensions, erosion tests, cross-AI tests, bias prevention, V0 smallest experiment, scaling. NON-AUTHORITATIVE guest evidence.",
+    "carrier": 6
+  },
+  {
+    "inv_id": "SRC-010",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Car \u2014 Guest Review Evidence \u2014 Gemini Pro Extended \u2014 6 September 2026.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 11633,
+    "original_sha256": "A711FE1EB1966FF39C49D2E775D60F8010A492F4F3FDFF1AFFAD60282242C5C1",
+    "type": "guest_review_evidence",
+    "date": "2026-09-06",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Verbatim Gemini Pro Extended adversarial architecture review. 4-part structure: critique of 12 assumptions, novel failure modes (lazy summarization, dangling pointers, format drift, sycophancy loop), 5 minimalist recommendations, 4-test continuity benchmark. NON-AUTHORITATIVE guest evidence.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-011",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Car conversation checkpoint 13 September 2026.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 3450,
+    "original_sha256": "A149E46DAA455D3DE9091419CEA67CEAC1617279E104DAA282F77C57DA6218CE",
+    "type": "diagnostic_evidence",
+    "date": "2026-09-13",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Preserved conversation showing CIF-read-without-execution failure. Partial overlap with SRC-007 (Exact Transcript). Contains checkpoint summary. Marked as FIRST conversation to resume on Car work return.",
+    "carrier": 6,
+    "flags": [
+      "POSSIBLE_OVERLAP_SRC007"
+    ]
+  },
+  {
+    "inv_id": "SRC-012",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Car Evidence \u2014 Warm Driver CIF Failure \u2014 9 September 2026.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 4061,
+    "original_sha256": "6145D81832976C9F8872538B7350D0A6034DCFD09240F63FDD8B1E95DDD7B853",
+    "type": "diagnostic_evidence",
+    "date": "2026-09-09",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Warm Driver declared FULL CIF COMPLETE without performing reads. Chris challenged. Driver admitted false claim. After genuine CIF, Driver still re-derived old Cloudflare/Tailscale routes. Chris stopped session. Driver recommended self-replacement. Recovery from fresh Driver succeeded. Key evidence for Car-verified grounding design.",
+    "carrier": 3
+  },
+  {
+    "inv_id": "SRC-013",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/Andi Control Centre - Concept and Working Approach.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 99406,
+    "original_sha256": "C2F2AD0F543A148FCD382DD9C16F4FA080793706656423D823E645EB14F99C15",
+    "type": "historical_master",
+    "date": "2026-09-03",
+    "project": [
+      "ANDI_CAR"
+    ],
+    "authority": "historical_record",
+    "status": "HISTORICAL",
+    "description": "Original large append-only Control Centre master. 99KB. Contains the FULL chronological development history from 3 Sep concept through 9 Sep heartbeat. Superseded as front-door by Authoritative Current State but retains massive historical/rationale value. Includes: original car analogy, desired interaction loop, architecture proposals, priority roadmap P0-P8, hardware purchase, independent reviews #1-3 adjudications, DAVE creation, cross-driver tests, filing structure decisions, CIF definitions, periodic grounding, audit monitor, commit rules, two-tier prompts, remote Car tool surface, web I/O, dual-door interface, full origin-purpose reconciliation, build decision, chat/Codex division, Drive bridge tests, Gmail draft transport, Dropbox responder, deterministic heartbeat.",
+    "carrier": 3,
+    "flags": [
+      "SECOND_LARGEST_FILE",
+      "HISTORICAL_MASTER",
+      "SUPERSEDED_AS_FRONT_DOOR"
+    ]
+  },
+  {
+    "inv_id": "SRC-014",
+    "path": "10 \u2014 GENERAL ANDI HISTORY/IGEL UD3 M350C \u2014 Hardware Reconnaissance and Possible Roles.md",
+    "folder": "10 \u2014 GENERAL ANDI HISTORY",
+    "original_bytes": 31585,
+    "original_sha256": "1F570F7A7E681994A71CE17687B5BCA9C3A1DE777739FC59028D6AFD5BD8DAD6",
+    "type": "project_master",
+    "date": "2026-09-03",
+    "project": [
+      "ANDI_CAR",
+      "IGEL"
+    ],
+    "authority": "current_authoritative_master",
+    "status": "CURRENT",
+    "description": "IGEL hardware project master. Hardware reconnaissance (CPU, RAM, storage, mSATA), role candidates, architecture notes, Iron Man model, first-pass capabilities, text-first principle, window monitor, Andi-to-Andi transport, meat box factor, V1 spec, latency requirement, working memory. Role update: selected as early Car prototype chassis 7 Sep. Installation checkpoint 9 Sep: 16GB RAM, Debian 13 on 256GB NVMe/SSD, SSH proven, first local Car file created. Includes Driver grounding observation, tool-routing incident, Linux-Drive adapter evidence, Dropbox responder reboot verification.",
+    "carrier": 6,
+    "flags": [
+      "HARDWARE_AUTHORITY"
+    ]
+  },
+  {
+    "inv_id": "SRC-015",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Benchmark Execution Route & OpenRouter Laboratory Proof Checkpoint \u2014 16 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 15754,
+    "original_sha256": "43E8D6EF032C121022A1A02A7D616CA716C6387929538916E8996C3AF707278D",
+    "type": "execution_checkpoint",
+    "date": "2026-09-16",
+    "project": [
+      "ANDI_CAR",
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Records OpenRouter Test 1 PASS (seed 7319, container gen_511edeb4b1ef, gpt-5). Test 2 cold-isolation started but NO result captured. Strategy split: simple AI-run for A/B/C selection, reserve OpenRouter torture rig for post-selection. Agreed execution direction and post-selection plan.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-016",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Benchmark Fixture & Phase-5 Fairness Handover Checkpoint \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 17831,
+    "original_sha256": "7B677EA42E88441F5A69797E2B7F42E268B500D8EA5627FED66ED0A05859BAFF",
+    "type": "execution_checkpoint",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Latest complete recovery/handover for benchmark execution. 11 sections: pre-existing frozen state, lab-operator attempt, Gemini fixture designer, final fixture correction audit, Phase-5 claim audit per candidate, independent fairness review, Andi audit of fairness, three current buckets (frozen/pending-freeze/open), execution route/do-not list, next actions, fresh-chat recovery.",
+    "carrier": 4,
+    "flags": [
+      "KEY_HANDOVER_DOCUMENT"
+    ]
+  },
+  {
+    "inv_id": "SRC-017",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Full CIF & Benchmark Fixture Audit Handover Checkpoint \u2014 16 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 25142,
+    "original_sha256": "84FC842EF47B2449A06DF5C69C4C28A1C75AC439352A425B8EDCD4A89E3B625A",
+    "type": "execution_checkpoint",
+    "date": "2026-09-16",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "HISTORICAL",
+    "description": "Comprehensive handover after long benchmark design session. Full CIF with revision IDs. Records Opus operator attempt (correctly stopped for missing fixtures), fresh Gemini fixture designer proposal, 6 critical audit flags on Gemini package, existing-vs-deferred-vs-unspecified classification, immediate next action. Process correction: do not hand authoritative Car work to Work.",
+    "carrier": 6,
+    "flags": [
+      "SUPERSEDED_BY_SRC016"
+    ]
+  },
+  {
+    "inv_id": "SRC-018",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Known Next Job \u2014 Controlled PowerShell Access for Test Execution \u2014 18 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 10350,
+    "original_sha256": "4FD41BAEEEEE8E7C7F0D9161E73C9E494B74B62B2613366A6B897793B659D656",
+    "type": "planning_record",
+    "date": "2026-09-18",
+    "project": [
+      "ANDI_CAR",
+      "ANDI_LAB"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Known next job: controlled PowerShell access for test execution. Boundaries, desired capability, agreed temporary architecture (AndiRunner account), minimum acceptance test. Host decision evolved: main PC -> HP ProDesk -> dedicated ProDesk with full local control. Status update 19 Sep: control route proven via declarative ANDI-MSG/1 translator. PING/IDENTITY passed on CZC8028H3G.",
+    "carrier": 4
+  },
+  {
+    "inv_id": "SRC-019",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 OpenRouter Laboratory Recovery Checkpoint \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 3792,
+    "original_sha256": "558070707750004C337DADF86CBCD0D56E2A018754B3049D978ADE9F352BA056",
+    "type": "execution_checkpoint",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Recovery of Opus benchmark laboratory archive from OpenRouter container. Archive: andi-bench-export.tar.gz, 25227 bytes, SHA-256 29f016c9... Verified on Windows PC. Preserved in Google Drive. Next-stage governance: independent referee approval before specimen injection.",
+    "carrier": 5
+  },
+  {
+    "inv_id": "SRC-020",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Opus Laboratory Construction Checkpoint & Blockers \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 34305,
+    "original_sha256": "A5747E9714F134A7592BA1C6253C4DE7B0CB66D8E253F81B404131F2FED895E1",
+    "type": "execution_checkpoint",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Opus 4.8 built fixture-independent lab machinery. Self-tests PASS after jail-traversal fix. TWO TRUE BLOCKERS: (1) literal runnable A/B/C source trees not supplied, (2) literal frozen fixture corpus not supplied. Contains stopping-point update, specimen-realisation/bias-control clarification, CI follow-up on original-proponent manufacturing, Megalodon CIF concept, post-benchmark flight-recorder requirement. 34KB.",
+    "carrier": 6,
+    "flags": [
+      "KEY_BENCHMARK_DOCUMENT",
+      "CONTAINS_MEGALODON_CONCEPT"
+    ]
+  },
+  {
+    "inv_id": "SRC-021",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Opus Laboratory Implementation Clarifications \u2014 FROZEN \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 5156,
+    "original_sha256": "5F9D44C31979B2A5AAD141A815C2C44154CB34D1CD5B05345332261E05F03664",
+    "type": "frozen_benchmark_input",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Frozen implementation clarifications: blinding (candidate self-ID permitted), Phase-6 final retrieval (one combined Q1-Q4 invocation), Phase-5 private target manifests (per-candidate rules), correctness grading (semantic not regex), parameters/limits unchanged, controller boundary.",
+    "carrier": 6
+  },
+  {
+    "inv_id": "SRC-022",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Phase 0 Candidate Capture Checkpoint \u2014 16 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 4859,
+    "original_sha256": "B40106F2F4D41C873A0822618A2A4140BA9BB02C2B438ED843BAD087EB420FB3",
+    "type": "execution_checkpoint",
+    "date": "2026-09-16",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "HISTORICAL",
+    "description": "Handoff after three Phase-0 proponents returned candidates. A=Opus 5 (51383 bytes), B=Grok 4.20 (15565 bytes), C=GPT-5.6 Sol (58118 bytes). No comparative evaluation yet. Next: independent Gemini compliance review.",
+    "carrier": 5
+  },
+  {
+    "inv_id": "SRC-023",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Phase 0 Freeze & Benchmark Environment Checkpoint \u2014 16 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 6280,
+    "original_sha256": "EBCBFDC638C7763833FCEFDED8990C3AE7A2878C98946D0A269431BA5BEEDC48",
+    "type": "execution_checkpoint",
+    "date": "2026-09-16",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Formal Phase 0 freeze. All three candidates PASS Gemini compliance review. Gemini referee output preserved. Test environment question: investigate existing AI/agent/coding environment before building custom TOBY. TOBY NOT created. Reserve substantial torture rig for post-selection.",
+    "carrier": 4
+  },
+  {
+    "inv_id": "SRC-024",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Phase 0 Proponent Pack \u2014 Frozen Base Prompt & Candidate Appendices \u2014 16 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 18159,
+    "original_sha256": "349B464EE2DF48C203405CC11AF089181B976ADFEBBEE465F95EE58CA99431B8",
+    "type": "frozen_benchmark_input",
+    "date": "2026-09-16",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Complete frozen Phase-0 proponent pack. Universal base prompt (Andi Car purpose, problem, 15 universal requirements, expected conditions, 10-section implementation task, constraints). Three candidate appendices: A (unified minimal Git), B (facts/reasoning lanes), C (referenced records with generated views). Isolation rule: each proponent sees only its own appendix.",
+    "carrier": 5,
+    "flags": [
+      "KEY_BENCHMARK_DOCUMENT"
+    ]
+  },
+  {
+    "inv_id": "SRC-025",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Phase 5 Destructive Recovery Mechanical Contract \u2014 FROZEN \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 11763,
+    "original_sha256": "A7A6201D450A5B8E104B1163D0374415B25A33A96BC697F6B426FB562491B169",
+    "type": "frozen_benchmark_input",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Frozen Phase-5 destructive recovery contract. Common semantic objective. Damage class: committed bypass deletion. Per-candidate attack/recovery rules for A (CURRENT.md + relevant STATE.md), B (facts/current.md + facts-index.json), C (minimum canonical normative record set). Comparability/fairness boundary. Pre/post-attack controller checks. Success/failure recording.",
+    "carrier": 4
+  },
+  {
+    "inv_id": "SRC-026",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Post-Phase-0 Execution Policy \u2014 FROZEN \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 9704,
+    "original_sha256": "F62B7B7316743004A514C4EF9A90CD0578EDA05B520E73C608204CD275A3175A",
+    "type": "frozen_benchmark_input",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Frozen execution policy. Phase-6 one cold/stateless Driver per event. Standard Driver: GPT-5.6 Luna via OpenRouter. Stage-1 sanity: GPT-5.6 Sol. Temperature 0, seed 7319. 32000-token retrieval ceiling. 30/60 action limits. 3-attempt loop bound. N=3 Stage-2 replication. Blinding/sanitization. Controller/Driver persistence boundary.",
+    "carrier": 3
+  },
+  {
+    "inv_id": "SRC-027",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Pre-Manufacture CI Checkpoint & Gemini Referee Rulings \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 37180,
+    "original_sha256": "2288DF8B5024DE78E17DFB90B5CAE43DDB1324C7036CFFAC4AA5101EAC1604E2",
+    "type": "execution_checkpoint",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "CURRENT",
+    "description": "Lab recovery confirmed. Megalodon packages validated PASS for A/B/C. Gemini referee specimen-realisation rulings: approved, ambiguity=least-complex interpretation. Manufacturing rulings A1-A6, B1-B7, C1-C5 all FIDELITY CLARIFICATION. All candidates cleared for controlled manufacture. Post-CIF manufacturing update 18 Sep: Candidate A Stage-1 PASS, first Stage-2 manufacture completed but BYTES LOST (transfer failure). Candidate B Stage-2 interrupted/stalled. Mission-control end-of-night checkpoint. 37KB.",
+    "carrier": 5,
+    "flags": [
+      "KEY_BENCHMARK_DOCUMENT",
+      "CONTAINS_REFEREE_RULINGS",
+      "LARGEST_BENCHMARK_DOC"
+    ]
+  },
+  {
+    "inv_id": "SRC-028",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Pre-Opus Implementation Handover Checkpoint \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 7383,
+    "original_sha256": "BB3727B498AC13EEB13185EA1153BCE58519C48F7B2155401DAAB0698E3D5FD4",
+    "type": "execution_checkpoint",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "HISTORICAL",
+    "description": "Durable recovery point immediately before Opus 4.8 implementation-plan return. Summarizes frozen executable package state, Phase-5 mechanics, Phase-6/execution policy, OpenRouter/Opus state, handoff instruction given to Chris. Notes no OpenRouter ChatGPT plugin available. Conceptual note: A/B/C are three different persistent-Car architectures, not different AIs.",
+    "carrier": 6
+  },
+  {
+    "inv_id": "SRC-029",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Storage Architecture Benchmark Design Checkpoint \u2014 16 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 30253,
+    "original_sha256": "6C0231846C0DC0033D225AE0F814F4286BBA208EF5451BEB1E5B00ECBAD450E3",
+    "type": "execution_checkpoint",
+    "date": "2026-09-16",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Primary detailed benchmark design record. Full CIF reconciliation. Review trail (Opus/Gemini/DeepSeek). Three competing architectures defined. Cross-cutting reviewer findings. Gemini v1.0 challenges and v1.1 current design. 6-phase workload. Metrics/failure model. Staged narrowing. Warm-driver emphasis. Phase-0 proponent independence. Gemini v1.2 freeze rulings. 30KB. Durable source for frozen v1.2 methodology.",
+    "carrier": 5,
+    "flags": [
+      "KEY_BENCHMARK_DOCUMENT",
+      "V1.2_METHODOLOGY_SOURCE"
+    ]
+  },
+  {
+    "inv_id": "SRC-030",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Storage Architecture External Review \u2014 DeepSeek V4 Pro 0813 \u2014 15 September 2026.txt",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 101742,
+    "original_sha256": "09930AC27FF8AD5CD558B6BE7452B960F60EDD544C0E22A1384CC68A69F4E098",
+    "type": "guest_review_evidence",
+    "date": "2026-09-15",
+    "project": [
+      "ANDI_CAR",
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Verbatim DeepSeek V4 Pro adversarial review. 101KB. Sections A-Q. Attacks Candidates A and B. Proposes synthesis (single PROJECT.md with CURRENT/DECISIONS blocks). Defines CI/CIF retrieval. Supersession/provenance. Write/commit protocol. Backup/disaster recovery. Migration. Cold-AI/cold-human recovery tests. Maintenance burden. Hidden assumptions. 10-year verdict. NON-AUTHORITATIVE external evidence. Source SHA-256 in header: 3cb28f6b...",
+    "carrier": 2,
+    "flags": [
+      "THIRD_LARGEST_FILE",
+      "EXTERNAL_REVIEW"
+    ]
+  },
+  {
+    "inv_id": "SRC-031",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Storage Architecture External Review Checkpoint \u2014 15 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 8590,
+    "original_sha256": "205D8F9C40910216E783D9D040DC0428618559091ECE01F2BF39DB4807BC39C6",
+    "type": "execution_checkpoint",
+    "date": "2026-09-15",
+    "project": [
+      "ANDI_CAR",
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "HISTORICAL",
+    "description": "State of independent storage review after two reviews (Opus and Gemini). Main findings, independent convergence, provisional synthesis, possible next external review. Round-three adversarial review setup: DeepSeek V4 Pro selected, two candidate paths (unified minimal Git vs explicit facts/reasoning lanes), clean-room procedure defined.",
+    "carrier": 5
+  },
+  {
+    "inv_id": "SRC-032",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Storage Architecture Working Synthesis \u2014 15 September 2026.txt",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 6214,
+    "original_sha256": "9FB916AFBA2DFCF4AC9ECE8C9EDACFE3A24A74536125B36A7EAF9AA4C211D315",
+    "type": "working_synthesis",
+    "date": "2026-09-15",
+    "project": [
+      "ANDI_CAR",
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "working_material",
+    "status": "HISTORICAL",
+    "description": "Non-authoritative working synthesis from 15 Sep discussion. Three-review convergence. Differences that remain. Demonstrated master-file failure. Preserve richly; retrieve selectively. Candidate C concept (Car-generated front door). KISS constraint. Seven questions to attack before adoption.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-033",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Storage Benchmark Executable Fixture Package \u2014 FROZEN \u2014 17 September 2026.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 11309,
+    "original_sha256": "82353CF75DCBAC7EC8E7F30D99C04E362E93D7AC02B2F7DB43F0D6A5ABFB6520",
+    "type": "frozen_benchmark_input",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Execution manifest and authority map for Benchmark v1.2. Complete authority map with Drive IDs. Frozen candidate specimens. Fixture phases 1-6. Measurement contract (E_effective formula). Execution policy summary. Stage sequence. Laboratory operator instruction (IMPLEMENTATION PLAN ONLY first). Execution pre-flight. Freeze rule.",
+    "carrier": 5,
+    "flags": [
+      "KEY_BENCHMARK_DOCUMENT",
+      "EXECUTABLE_MANIFEST"
+    ]
+  },
+  {
+    "inv_id": "SRC-034",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi Car \u2014 Storage Benchmark Status Register \u2014 CURRENT.md",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 15943,
+    "original_sha256": "48E5FA596E8A52648F7D38CB1551365876EFF937B519F2539330F8594D7A60A8",
+    "type": "status_register",
+    "date": "2026-09-17",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "current_authoritative_master",
+    "status": "CURRENT",
+    "description": "Single front-door status register for Storage Benchmark. Status definitions (FROZEN/ACCEPTED-PENDING/OPEN/HISTORICAL). Tracks what is frozen vs open. Multiple status updates appended: Phase-5 mechanics frozen, executable package frozen, implementation audit approved for construction, Opus harness built to available-input limit. Two true blockers: literal candidate source trees and literal fixture corpus. Key Drive IDs for all benchmark records.",
+    "carrier": 3,
+    "flags": [
+      "BENCHMARK_FRONT_DOOR"
+    ]
+  },
+  {
+    "inv_id": "SRC-035",
+    "path": "20 \u2014 ANDI CAR PROJECT STRUCTURE/Andi_Car_Phase_0_Gemini_Compliance_Referee_Raw.txt",
+    "folder": "20 \u2014 ANDI CAR PROJECT STRUCTURE",
+    "original_bytes": 4728,
+    "original_sha256": "D5C66B1BF2BE1624DB4EEBBC42BF679BCE79A8B6C968B46A74813052643CC5ED",
+    "type": "referee_evidence",
+    "date": "2026-09-16",
+    "project": [
+      "STORAGE_BENCHMARK"
+    ],
+    "authority": "original_evidence",
+    "status": "FROZEN",
+    "description": "Verbatim Gemini 3.1 Pro Preview Phase-0 compliance referee output. Fidelity/Strength/Fairness PASS for all three candidates. ALL CANDIDATES PASS \u2014 PHASE 0 MAY BE FROZEN.",
+    "carrier": 4
+  },
+  {
+    "inv_id": "SRC-036",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Command Protocol Design.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 2704,
+    "original_sha256": "1C221B6A123A1B4C729B34CC8B5371858910D0FFA99E2F90E44901DF6AB5DEDD",
+    "type": "design_record",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "ANDI-MSG/1 declarative command protocol design. Drive-safe, human-readable. Core rule: no scripts/executable payloads in Drive. Envelope format. Initial vocabulary (PING, IDENTITY, READ_TEXT, HASH_FILE, LIST_DIR, WRITE_TEXT, PACKAGE_STATUS). 9-point safety model. Non-authoritative pending governance review.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-037",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Concept, Boundaries & Staged Build Plan \u2014 18 September 2026.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 13538,
+    "original_sha256": "93EF7B65A8E6611ABF55201D918899F94D51B51E43BB700A103A0B5AC842EAFD",
+    "type": "project_plan",
+    "date": "2026-09-18",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "current_authoritative_master",
+    "status": "CURRENT",
+    "description": "Full Lab MK1 concept, boundaries and 7-stage build plan. Host: HP ProDesk CZC8028H3G. Core idea: Andi/ChatGPT -> Drive -> HP -> PowerShell/tools -> OpenRouter. Stages 0-6 from Drive prep through IGEL bridge to Car migration. Governed commissioning update 19 Sep promotes declarative translator as preferred control. Safety/governance rules.",
+    "carrier": 5,
+    "flags": [
+      "LAB_PRIMARY_PLAN"
+    ]
+  },
+  {
+    "inv_id": "SRC-038",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Control Contract & Stage 0 Commissioning.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 4124,
+    "original_sha256": "AD55EE84CB8543EFDC404BBCEFA3F20087C2CCFFC10713B1D3888F7CC2523EFF",
+    "type": "contract_record",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "MK1 operating model: one runner, one active job, Drive as transport. Minimum job contract (andi-lab-job/1) and result contract (andi-lab-result/1). Stage 0 commissioning operation: commissioning.identity. First commissioning job with echo marker ANDI-LAB-MK1-FIRST-LIGHT. Implementation rule: reviewed before execution.",
+    "carrier": 3
+  },
+  {
+    "inv_id": "SRC-039",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 DeepSeek V4 Pro Manufacturer Dispatch \u2014 19 September 2026.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 0,
+    "original_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "type": "placeholder",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "unknown_authority",
+    "status": "CURRENT",
+    "description": "Zero-byte file. Placeholder or empty dispatch record for DeepSeek V4 Pro manufacturer. Content either not yet written or deliberately empty at baseline cutoff.",
+    "carrier": 4,
+    "flags": [
+      "ZERO_BYTE",
+      "NEEDS_HUMAN_REVIEW"
+    ]
+  },
+  {
+    "inv_id": "SRC-040",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 External Translator Manufacturing & Recovery Package \u2014 FROZEN.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 23953,
+    "original_sha256": "4ECE812134DB2B672A98C3A07BFD06F131D832C74F55B5B1CFE579AEA35AEB1E",
+    "type": "frozen_specification",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "frozen_benchmark",
+    "status": "FROZEN",
+    "description": "Frozen manufacturing specification for replacement translator. 24KB. Authority hierarchy. Mandatory operator rules. Target environment (CZC8028H3G, PS5.1, Drive control root). Architecture/trust boundary. ANDI-MSG/1 envelope. Full capability envelope. Grounding interlock. Known proven behaviour and failures (v0.5.1 proven, 0026 hung, v0.6 encoding failure). Governed update/staging/replacement mechanism. Real ChatGPT Driver <-> Google Drive capability envelope (PROVEN/FAILED/UNKNOWN). Mandatory Driver-side design requirement. Fail-closed/recovery/concurrency. Explicit non-goals. Required deliverables. Acceptance/regression tests. Independent referee instructions. Real-HP commissioning gates. Source/evidence manifest.",
+    "carrier": 5,
+    "flags": [
+      "KEY_LAB_DOCUMENT"
+    ]
+  },
+  {
+    "inv_id": "SRC-041",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 First Light & Declarative Control Checkpoint \u2014 19 September 2026.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 4108,
+    "original_sha256": "C473442E6A3374CFB351FD17B206C8E91D9345724B7D38C4ED25697FB18E25D0",
+    "type": "commissioning_evidence",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "original_evidence",
+    "status": "HISTORICAL",
+    "description": "Verified first-light sequence. Stage 0 Drive folders created. Runner v0.1 completed local first-light. Fresh cloud-originated mk1-cloud-light-002 proved Andi->Drive->HP->Drive->Andi. Runner v0.2 encountered platform write controls -> narrowed to declarative ANDI-MSG/1. USB bootstrap. v0.1.1 fixed PS5.1 Get-Date. PING mk1-msg-ping-001 PASS with marker ANDI-LAB-MK1-MSG-FIRST-LIGHT. IDENTITY mk1-msg-identity-002 PASS.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-042",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Fresh Driver Recovery Checkpoint \u2014 19 September 2026.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 2723,
+    "original_sha256": "F94D82A3BA8C43FEFE3F7500C4906918DC698085281256A715DC5009F2656A21",
+    "type": "recovery_checkpoint",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Fresh driver recovery checkpoint. v0.5.1 proved grounding interlock (stale rejection + current acceptance), PING, IDENTITY. Node v24.19.0 and Git 2.55.0 confirmed in Program Files. Fresh-process 0026 RUNTIME_DIAGNOSTIC hung. v0.6 launch failed. STOP STATE: HP at PowerShell prompt, v0.5.1 last proven, v0.6 unproven.",
+    "carrier": 2
+  },
+  {
+    "inv_id": "SRC-043",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Fresh Driver Recovery Checkpoint \u2014 External Manufacture Route.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 3585,
+    "original_sha256": "CA714F304EDC571217A6C701ECB0A8EB47946380395190C31B818DD9EF2B68B4",
+    "type": "recovery_checkpoint",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "Points to frozen external translator manufacturing/recovery package (SRC-040). Mandatory next-driver procedure: Full CIF, read Operator Record, recover OpenRouter connection, dispatch frozen package to external manufacturer, give to independent referee, do not install until review passes. Critical engineering constraint: design against real ChatGPT Driver <-> Drive capability. Recovered technical state. Boundaries.",
+    "carrier": 4
+  },
+  {
+    "inv_id": "SRC-044",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Operator & Recovery Record \u2014 19 September 2026.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 27602,
+    "original_sha256": "4D537A9301BB09A9071EC14C87F7AC3E4A535876BB364C6ECC62AA3462FF3E68",
+    "type": "operator_manual",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "current_authoritative_master",
+    "status": "CURRENT",
+    "description": "Durable lab-local operating memory. 28KB. Machine details (CZC8028H3G, Win11 Pro, PS5.1). Drive control path. ANDI-MSG/1 envelope. ChatGPT message origination workflow. Translator bootstrap history (v0.1->v0.1.1->v0.2->v0.3->v0.3.1->v0.4.1->v0.5). V0.2 full operation set and safety model. All commissioning evidence (PING 003, IDENTITY 004, INVENTORY 005, NODE INSTALL 006, GIT INSTALL 007/008). Return-channel lesson. Checkpoint post-0013. Pre-commit CIF: grounding interlock promotion (v0.5). Manufacture checkpoint v0.5. New-driver handoff after v0.5/job 0016. Lab operator context-budget/delegation rule.",
+    "carrier": 4,
+    "flags": [
+      "KEY_LAB_DOCUMENT",
+      "LAB_OPERATING_MANUAL"
+    ]
+  },
+  {
+    "inv_id": "SRC-045",
+    "path": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT/ANDI LAB \u2014 MK1 \u2014 Translator v0.2 Stage 2 Capability Design \u2014 19 September 2026.md",
+    "folder": "30 \u2014 LAB HISTORY \u2014 READ-ONLY SNAPSHOT",
+    "original_bytes": 11752,
+    "original_sha256": "2B4CD313132924F44176B5DAD29C29B5736E7A025E94150F606DE4FBDC937C15",
+    "type": "design_record",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_LAB"
+    ],
+    "authority": "working_material",
+    "status": "CURRENT",
+    "description": "V0.2 translator capability design. Design filter (6 questions). Full proposed operation set. Path model (LABROOT with WORK/TOOLS/STATE subroots). Integrity/replay fixes. Result contract. Test order (16 steps). Manual-intervention target. Stop conditions. Manufacture checkpoint: AndiLabTranslator-v0.2.ps1, 15142 bytes, SHA-256 5010a262... Pre-commit CIF: diagnostic expansion adding RUNTIME_DIAGNOSTIC. Grounding-interlock idea recorded.",
+    "carrier": 3
+  },
+  {
+    "inv_id": "SRC-046",
+    "path": "90 \u2014 EXCLUSIONS & MANIFESTS/EXCLUSIONS \u2014 DO NOT INGEST.md",
+    "folder": "90 \u2014 EXCLUSIONS & MANIFESTS",
+    "original_bytes": 1134,
+    "original_sha256": "7B79814025541074CE523219AD33860D6BDE7FD41A3E4985D004E0C7EB42A43A",
+    "type": "exclusion_record",
+    "date": "2026-09-19",
+    "project": [
+      "ANDI_PRESERVATION"
+    ],
+    "authority": "governing_rule",
+    "status": "CURRENT",
+    "description": "Preservation exclusions. DAVE quarantined/excluded. Candidate-private material: never combine or cross-ingest A/B/C. Live/transient Lab material: not authority unless separately supplied. Duplicates: do not delete. Authority: entire staging corpus is non-authoritative preservation support.",
+    "carrier": 3,
+    "flags": [
+      "EXCLUSION_BOUNDARY"
+    ]
+  }
+]

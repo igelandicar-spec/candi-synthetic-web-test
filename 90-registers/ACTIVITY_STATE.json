@@ -1,0 +1,540 @@
+{
+  "system": "ANDI_ACTIVITY_TRACKING_SYSTEM",
+  "version": "3.0",
+  "generated": "2026-09-21",
+  "status": "INTERIM / REVERSIBLE / NON-CANDIDATE",
+  "algorithm": {
+    "name": "Location-concentration ranking from meaningful-work event stream",
+    "summary": "Activity bands rank the N most actively CONCENTRATED canonical locations, not the N most recent events. The event log is the input signal; the output is a ranked list of locations by accumulated work concentration.",
+    "steps": [
+      "1. Maintain an append-only log of meaningful-work events (ACT-NNN). Each event names the canonical records and/or branches it affects.",
+      "2. To compute band assignments, scan the event log within a defined horizon (default: all events, or last H events if the log grows very large).",
+      "3. For each canonical record, count how many distinct meaningful-work events within the horizon affected it. This is its ACTIVITY WEIGHT.",
+      "4. Rank all canonical records by activity weight descending. Ties broken by most-recent-event timestamp.",
+      "5. Top N records by weight = HOT. Next N = WARM. Next N = COOL. Remainder = COLD.",
+      "6. Branch-level hottest_activity = the highest band of any member record in that branch.",
+      "7. HOT-FILES index is regenerated from the band assignments."
+    ],
+    "properties": [
+      "Repeated meaningful work on ONE location increases its weight, concentrating activity there rather than consuming multiple band slots.",
+      "One event affecting multiple records increases weight for ALL of them.",
+      "A dormant/COLD location receiving new meaningful work immediately gains weight and can jump to HOT if it enters the top N.",
+      "A location with a single recent event but no concentration may be outranked by a location with sustained older work. This is intentional: concentration matters more than mere recency.",
+      "Clerical/housekeeping events are never logged, so they contribute zero weight.",
+      "The algorithm is deterministic: same event log + same N = same band assignments.",
+      "Cheap to compute: scan events, count per-record, sort, slice into N-sized bands."
+    ],
+    "configurable_N": 5,
+    "configurable_H": "null (use all events). May be set to e.g. 50 if the event log grows very large, to bound computation. A horizon of null means all historical work contributes, with natural dilution as more locations accumulate events.",
+    "recomputation_trigger": "Whenever a new ACT-NNN event is appended.",
+    "purpose": "current_work_guidance",
+    "authority_independent": true,
+    "retention_independent": true,
+    "cooling": "exponential",
+    "half_life_days": 30,
+    "reference_date": "2026-09-27T00:00:00+00:00"
+  },
+  "design_principles": {
+    "1_activity_means_meaningful_work": "Activity tracks WHERE Chris/Andi attention and meaningful work is concentrated. NOT document age, timestamps, authority, retrieval preference, or historical importance.",
+    "2_authority_is_independent": "An authoritative record may be COLD. A provisional record may be HOT. Activity NEVER overrides authority.",
+    "3_retrieval_depth_is_independent": "A large historical record is not COLD merely because it is normally retrieved on demand. If meaningful work involves it, its weight increases.",
+    "4_clerical_does_not_heat": "Housekeeping, timestamps, formatting, metadata maintenance, archive manufacture, file moves, automated sync do NOT constitute meaningful activity and are NEVER logged as events.",
+    "5_reactivation_is_immediate": "A COLD location receiving meaningful new work gains weight immediately. No cooling penalty or dormancy delay.",
+    "6_one_authoritative_state": "This file is the SINGLE authoritative activity state. HOT-FILES, SYSTEM-MAP branch annotations, MACHINE-TREE activity bands and RETRIEVAL-INDEX activity bands are ALL derived from this file.",
+    "7_continuous_evolution": "Append new events as work occurs. Recompute bands. Regenerate derived views. No periodic full-corpus reconstruction needed.",
+    "8_concentration_not_recency": "Bands represent concentration of meaningful work at locations, not merely which events happened most recently. Sustained work on one location keeps it hot even if other locations receive a single newer event."
+  },
+  "what_counts_as_meaningful_activity": {
+    "DOES_count": [
+      "Substantive project work session",
+      "New decision made and recorded",
+      "Meaningful test executed or result obtained",
+      "New evidence added or significant evidence retrieved for active work",
+      "Architecture/design change committed",
+      "Important measurement or discovery",
+      "Material edit to a canonical record's operative content",
+      "Genuine reactivation of a dormant branch for real work",
+      "Significant new dependency or relationship established",
+      "Resolution of an uncertainty or conflict"
+    ],
+    "does_NOT_count": [
+      "File rename or move",
+      "Formatting or whitespace change",
+      "Metadata touch or timestamp update",
+      "Automated sync or backup",
+      "Archive manufacture or preservation housekeeping",
+      "Clerical register update",
+      "Reading a record without changing or actively working with it",
+      "A record being referenced by another record unless that reference represents active work"
+    ]
+  },
+  "event_log": [
+    {
+      "event_id": "ACT-001",
+      "timestamp": "2026-09-19T15:30:00Z",
+      "type": "work_session",
+      "description": "Lab translator v0.5 grounding interlock commissioned. PING regression in new process.",
+      "affected_records": [
+        "CAN-LAB-002",
+        "CAN-LAB-003"
+      ],
+      "affected_branches": [
+        "30-lab-mk1"
+      ]
+    },
+    {
+      "event_id": "ACT-002",
+      "timestamp": "2026-09-19T14:00:00Z",
+      "type": "work_session",
+      "description": "Lab translator v0.4 RUNTIME_DIAGNOSTIC proved Node/Git at fixed paths.",
+      "affected_records": [
+        "CAN-LAB-002"
+      ],
+      "affected_branches": [
+        "30-lab-mk1"
+      ]
+    },
+    {
+      "event_id": "ACT-003",
+      "timestamp": "2026-09-19T13:00:00Z",
+      "type": "work_session",
+      "description": "Lab ANDI-MSG/1 declarative translator first light. PING and IDENTITY proved.",
+      "affected_records": [
+        "CAN-LAB-002",
+        "CAN-LAB-001"
+      ],
+      "affected_branches": [
+        "30-lab-mk1"
+      ]
+    },
+    {
+      "event_id": "ACT-004",
+      "timestamp": "2026-09-19T12:00:00Z",
+      "type": "decision",
+      "description": "External translator manufacturing package frozen.",
+      "affected_records": [
+        "CAN-LAB-003"
+      ],
+      "affected_branches": [
+        "30-lab-mk1"
+      ]
+    },
+    {
+      "event_id": "ACT-005",
+      "timestamp": "2026-09-19T10:00:00Z",
+      "type": "edit",
+      "description": "Lab communication commissioning note added to Car current state.",
+      "affected_records": [
+        "CAN-CAR-001"
+      ],
+      "affected_branches": [
+        "10-andi-car"
+      ]
+    },
+    {
+      "event_id": "ACT-006",
+      "timestamp": "2026-09-18T23:00:00Z",
+      "type": "work_session",
+      "description": "Candidate A re-manufacture completed and recovered. Candidate B stalled.",
+      "affected_records": [
+        "CAN-BM-001"
+      ],
+      "affected_branches": [
+        "20-storage-benchmark"
+      ]
+    },
+    {
+      "event_id": "ACT-007",
+      "timestamp": "2026-09-18T20:00:00Z",
+      "type": "work_session",
+      "description": "OpenRouter controller preservation proof PASS. Lab MK1 project created.",
+      "affected_records": [
+        "CAN-LAB-001",
+        "CAN-CAR-013"
+      ],
+      "affected_branches": [
+        "30-lab-mk1",
+        "10-andi-car"
+      ]
+    },
+    {
+      "event_id": "ACT-008",
+      "timestamp": "2026-09-17T02:00:00Z",
+      "type": "decision",
+      "description": "Executable fixture package FROZEN. Opus lab construction completed.",
+      "affected_records": [
+        "CAN-BM-001",
+        "CAN-BM-002"
+      ],
+      "affected_branches": [
+        "20-storage-benchmark"
+      ]
+    },
+    {
+      "event_id": "ACT-009",
+      "timestamp": "2026-09-17T00:00:00Z",
+      "type": "decision",
+      "description": "Phase 5 contract frozen. Execution policy frozen. Implementation clarifications frozen.",
+      "affected_records": [
+        "CAN-BM-001"
+      ],
+      "affected_branches": [
+        "20-storage-benchmark"
+      ]
+    },
+    {
+      "event_id": "ACT-010",
+      "timestamp": "2026-09-16T22:00:00Z",
+      "type": "work_session",
+      "description": "Benchmark v1.2 methodology frozen. Phase 0 proponents generated and frozen.",
+      "affected_records": [
+        "CAN-BM-007",
+        "CAN-BM-008",
+        "CAN-BM-003"
+      ],
+      "affected_branches": [
+        "20-storage-benchmark"
+      ]
+    },
+    {
+      "event_id": "ACT-011",
+      "timestamp": "2026-09-15T20:00:00Z",
+      "type": "work_session",
+      "description": "Storage architecture external reviews. Chronological spine created.",
+      "affected_records": [
+        "CAN-CAR-010"
+      ],
+      "affected_branches": [
+        "10-andi-car",
+        "20-storage-benchmark"
+      ]
+    },
+    {
+      "event_id": "ACT-012",
+      "timestamp": "2026-09-14T20:00:00Z",
+      "type": "decision",
+      "description": "Two-counter health model adjudicated. Pre-commit gate NOT relaxed.",
+      "affected_records": [
+        "CAN-GOV-001"
+      ],
+      "affected_branches": [
+        "10-andi-car"
+      ]
+    },
+    {
+      "event_id": "ACT-013",
+      "timestamp": "2026-09-13T18:00:00Z",
+      "type": "discovery",
+      "description": "CIF-read-without-compliance failure. Token-aware context refresh. Memory/Chat health controls.",
+      "affected_records": [
+        "CAN-GOV-001",
+        "CAN-CAR-001"
+      ],
+      "affected_branches": [
+        "10-andi-car"
+      ]
+    },
+    {
+      "event_id": "ACT-014",
+      "timestamp": "2026-09-11T21:30:00Z",
+      "type": "test",
+      "description": "Dropbox responder reboot persistence PASS. CIF benchmark. Get_car_status PASS.",
+      "affected_records": [
+        "CAN-CAR-012"
+      ],
+      "affected_branches": [
+        "10-andi-car"
+      ]
+    },
+    {
+      "event_id": "ACT-015",
+      "timestamp": "2026-09-09T19:00:00Z",
+      "type": "work_session",
+      "description": "IGEL first milestone PASS. Debian installed. SSH proven. Warm-driver failure observed.",
+      "affected_records": [
+        "CAN-CAR-012",
+        "CAN-CAR-001",
+        "CAN-CAR-011"
+      ],
+      "affected_branches": [
+        "10-andi-car"
+      ]
+    }
+  ],
+  "derived_concentration_ranking": {
+    "computation_note": "30-day exponential time decay; deterministic UTC calendar-day interpretation.",
+    "as_of": "2026-09-27T00:00:00+00:00",
+    "weights": {
+      "CAN-LAB-002": {
+        "event_count": 3,
+        "decayed_score": 2.4937136884283633,
+        "latest": "2026-09-19T15:30:00+00:00",
+        "events": [
+          "ACT-003",
+          "ACT-002",
+          "ACT-001"
+        ]
+      },
+      "CAN-BM-001": {
+        "event_count": 3,
+        "decayed_score": 2.399653448324435,
+        "latest": "2026-09-18T23:00:00+00:00",
+        "events": [
+          "ACT-009",
+          "ACT-008",
+          "ACT-006"
+        ]
+      },
+      "CAN-CAR-001": {
+        "event_count": 3,
+        "decayed_score": 2.214626470249424,
+        "latest": "2026-09-19T10:00:00+00:00",
+        "events": [
+          "ACT-015",
+          "ACT-013",
+          "ACT-005"
+        ]
+      },
+      "CAN-LAB-003": {
+        "event_count": 2,
+        "decayed_score": 1.6624757922855755,
+        "latest": "2026-09-19T15:30:00+00:00",
+        "events": [
+          "ACT-004",
+          "ACT-001"
+        ]
+      },
+      "CAN-LAB-001": {
+        "event_count": 2,
+        "decayed_score": 1.6434902924990233,
+        "latest": "2026-09-19T13:00:00+00:00",
+        "events": [
+          "ACT-007",
+          "ACT-003"
+        ]
+      },
+      "CAN-GOV-001": {
+        "event_count": 2,
+        "decayed_score": 1.464183394863471,
+        "latest": "2026-09-14T20:00:00+00:00",
+        "events": [
+          "ACT-013",
+          "ACT-012"
+        ]
+      },
+      "CAN-CAR-012": {
+        "event_count": 2,
+        "decayed_score": 1.350710395370335,
+        "latest": "2026-09-11T21:30:00+00:00",
+        "events": [
+          "ACT-015",
+          "ACT-014"
+        ]
+      },
+      "CAN-CAR-013": {
+        "event_count": 1,
+        "decayed_score": 0.8122523963562356,
+        "latest": "2026-09-18T20:00:00+00:00",
+        "events": [
+          "ACT-007"
+        ]
+      },
+      "CAN-BM-002": {
+        "event_count": 1,
+        "decayed_score": 0.7937005259840998,
+        "latest": "2026-09-17T02:00:00+00:00",
+        "events": [
+          "ACT-008"
+        ]
+      },
+      "CAN-BM-003": {
+        "event_count": 1,
+        "decayed_score": 0.7755723809168673,
+        "latest": "2026-09-16T22:00:00+00:00",
+        "events": [
+          "ACT-010"
+        ]
+      },
+      "CAN-BM-007": {
+        "event_count": 1,
+        "decayed_score": 0.7755723809168673,
+        "latest": "2026-09-16T22:00:00+00:00",
+        "events": [
+          "ACT-010"
+        ]
+      },
+      "CAN-BM-008": {
+        "event_count": 1,
+        "decayed_score": 0.7755723809168673,
+        "latest": "2026-09-16T22:00:00+00:00",
+        "events": [
+          "ACT-010"
+        ]
+      },
+      "CAN-CAR-010": {
+        "event_count": 1,
+        "decayed_score": 0.757858283255199,
+        "latest": "2026-09-15T20:00:00+00:00",
+        "events": [
+          "ACT-011"
+        ]
+      },
+      "CAN-CAR-011": {
+        "event_count": 1,
+        "decayed_score": 0.6597539553864471,
+        "latest": "2026-09-09T19:00:00+00:00",
+        "events": [
+          "ACT-015"
+        ]
+      }
+    },
+    "ranked_list": [
+      {
+        "rank": 1,
+        "id": "CAN-LAB-002",
+        "score": 2.4937136884283633,
+        "event_count": 3,
+        "latest": "2026-09-19T15:30:00+00:00"
+      },
+      {
+        "rank": 2,
+        "id": "CAN-BM-001",
+        "score": 2.399653448324435,
+        "event_count": 3,
+        "latest": "2026-09-18T23:00:00+00:00"
+      },
+      {
+        "rank": 3,
+        "id": "CAN-CAR-001",
+        "score": 2.214626470249424,
+        "event_count": 3,
+        "latest": "2026-09-19T10:00:00+00:00"
+      },
+      {
+        "rank": 4,
+        "id": "CAN-LAB-003",
+        "score": 1.6624757922855755,
+        "event_count": 2,
+        "latest": "2026-09-19T15:30:00+00:00"
+      },
+      {
+        "rank": 5,
+        "id": "CAN-LAB-001",
+        "score": 1.6434902924990233,
+        "event_count": 2,
+        "latest": "2026-09-19T13:00:00+00:00"
+      },
+      {
+        "rank": 6,
+        "id": "CAN-GOV-001",
+        "score": 1.464183394863471,
+        "event_count": 2,
+        "latest": "2026-09-14T20:00:00+00:00"
+      },
+      {
+        "rank": 7,
+        "id": "CAN-CAR-012",
+        "score": 1.350710395370335,
+        "event_count": 2,
+        "latest": "2026-09-11T21:30:00+00:00"
+      },
+      {
+        "rank": 8,
+        "id": "CAN-CAR-013",
+        "score": 0.8122523963562356,
+        "event_count": 1,
+        "latest": "2026-09-18T20:00:00+00:00"
+      },
+      {
+        "rank": 9,
+        "id": "CAN-BM-002",
+        "score": 0.7937005259840998,
+        "event_count": 1,
+        "latest": "2026-09-17T02:00:00+00:00"
+      },
+      {
+        "rank": 10,
+        "id": "CAN-BM-003",
+        "score": 0.7755723809168673,
+        "event_count": 1,
+        "latest": "2026-09-16T22:00:00+00:00"
+      },
+      {
+        "rank": 11,
+        "id": "CAN-BM-007",
+        "score": 0.7755723809168673,
+        "event_count": 1,
+        "latest": "2026-09-16T22:00:00+00:00"
+      },
+      {
+        "rank": 12,
+        "id": "CAN-BM-008",
+        "score": 0.7755723809168673,
+        "event_count": 1,
+        "latest": "2026-09-16T22:00:00+00:00"
+      },
+      {
+        "rank": 13,
+        "id": "CAN-CAR-010",
+        "score": 0.757858283255199,
+        "event_count": 1,
+        "latest": "2026-09-15T20:00:00+00:00"
+      },
+      {
+        "rank": 14,
+        "id": "CAN-CAR-011",
+        "score": 0.6597539553864471,
+        "event_count": 1,
+        "latest": "2026-09-09T19:00:00+00:00"
+      }
+    ],
+    "band_assignments": {
+      "HOT": [
+        "CAN-BM-001",
+        "CAN-CAR-001",
+        "CAN-LAB-001",
+        "CAN-LAB-002",
+        "CAN-LAB-003"
+      ],
+      "WARM": [
+        "CAN-BM-002",
+        "CAN-BM-003",
+        "CAN-CAR-012",
+        "CAN-CAR-013",
+        "CAN-GOV-001"
+      ],
+      "COOL": [
+        "CAN-BM-007",
+        "CAN-BM-008",
+        "CAN-CAR-010",
+        "CAN-CAR-011"
+      ],
+      "COLD": [
+        "CAN-BM-004",
+        "CAN-BM-005",
+        "CAN-BM-006",
+        "CAN-CAR-002",
+        "CAN-CAR-003",
+        "CAN-CAR-004",
+        "CAN-GOV-002",
+        "CAN-GOV-003"
+      ]
+    },
+    "branch_hottest": {
+      "ANDI_GLOBAL": "WARM",
+      "ANDI_PRESERVATION": "COLD",
+      "ANDI_CAR": "HOT",
+      "IGEL": "WARM",
+      "ANDI_LAB": "HOT",
+      "STORAGE_BENCHMARK": "HOT"
+    }
+  },
+  "forward_maintenance": {
+    "adding_work": "1. Append ACT-NNN to event_log. 2. Recount weights for affected records. 3. Re-rank and re-slice into N-sized bands. 4. Regenerate HOT-FILES, update branch_hottest in SYSTEM-MAP, update derived activity in MACHINE-TREE/RETRIEVAL-INDEX.",
+    "reactivating_cold": "Same as adding work. The cold record gains weight from the new event and enters the ranking. If it reaches top N, it becomes HOT immediately.",
+    "new_project_or_record": "Create canonical record with stable ID. First meaningful work event names it. It enters the ranking at weight=1 and may immediately be HOT if the top-N threshold permits.",
+    "record_supersession": "Superseded record stops receiving new events. Its weight naturally decays relative to records still receiving work. It falls through bands as newer locations accumulate more weight.",
+    "horizon_management": "If the event log grows very large, set H to scan only the last H events for weight computation. Older events are preserved as history but stop contributing to band ranking. H=null (all events) is the default.",
+    "no_reconstruction": "Band computation requires only: scan events, count per-record, sort, slice. No full-corpus traversal."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "integration": "ANDI New Preservation controlled frozen-V3 integration",
+  "date": "2026-09-25",
+  "baseline": {
+    "filename": "andi-preservation-V3-download-2026-09-21.tar.gz",
+    "bytes": 83503,
+    "sha256": "65929319673c850f2f40ace89a6052a426777f0d843c4adc30b0edeac06a28e5"
+  },
+  "accepted_mechanism": {
+    "filename": "ANDI-Candidate-1-INT-D01-recovery-repair-successor-2026-09-24.tar.gz",
+    "bytes": 18652,
+    "sha256": "ed047b9c61fb92605cdda0ae13a25b0193f679e5c501f71e83c09aaea1c3bdc4",
+    "incorporated_behaviour": "journal-declared unique publication and rollback temporary paths; verified atomic publication; restartable rollback; preservation and refusal of unowned residue"
+  },
+  "activity_policy": {
+    "purpose": "current-work guidance only",
+    "cooling": "exponential",
+    "half_life_days": 30,
+    "as_of": "2026-09-25T00:00:00Z",
+    "cannot_change": [
+      "authority",
+      "storage",
+      "retention",
+      "historical status",
+      "CIF scope"
+    ]
+  },
+  "boundaries": {
+    "activation": false,
+    "cutover": false,
+    "publication_over_existing_authority": false,
+    "source_archives_modified": false,
+    "historical_completeness_claimed": false
+  }
+}

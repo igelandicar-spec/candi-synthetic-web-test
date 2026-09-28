@@ -1,0 +1,81 @@
+{
+  "index": "HOT_FILES_INDEX",
+  "version": "3.1",
+  "derived_from": "90-registers/ACTIVITY_STATE.json",
+  "algorithm": "exponential 30-day time decay",
+  "as_of": "2026-09-27T00:00:00+00:00",
+  "hot_records": [
+    {
+      "id": "CAN-LAB-002",
+      "score": 2.4937136884283633,
+      "event_count": 3,
+      "title": "Operator & Recovery Record",
+      "path": "30-lab-mk1/current/OPERATOR-RECORD.md"
+    },
+    {
+      "id": "CAN-BM-001",
+      "score": 2.399653448324435,
+      "event_count": 3,
+      "title": "Benchmark Status Register",
+      "path": "20-storage-benchmark/frozen/BENCHMARK-STATUS-REGISTER.md"
+    },
+    {
+      "id": "CAN-CAR-001",
+      "score": 2.214626470249424,
+      "event_count": 3,
+      "title": "Car Compact Current State",
+      "path": "10-andi-car/current/COMPACT-CURRENT-STATE.md"
+    },
+    {
+      "id": "CAN-LAB-003",
+      "score": 1.6624757922855755,
+      "event_count": 2,
+      "title": "Translator Mfg Package",
+      "path": "30-lab-mk1/current/TRANSLATOR-MANUFACTURING-PACKAGE.md"
+    },
+    {
+      "id": "CAN-LAB-001",
+      "score": 1.6434902924990233,
+      "event_count": 2,
+      "title": "Lab MK1 Plan",
+      "path": "30-lab-mk1/current/LAB-PLAN.md"
+    }
+  ],
+  "warm_records": [
+    {
+      "id": "CAN-GOV-001",
+      "score": 1.464183394863471,
+      "event_count": 2,
+      "title": "Operating Standard",
+      "path": "01-governance/OPERATING-STANDARD.md"
+    },
+    {
+      "id": "CAN-CAR-012",
+      "score": 1.350710395370335,
+      "event_count": 2,
+      "title": "IGEL Hardware",
+      "path": "10-andi-car/igel/IGEL-HARDWARE.md"
+    },
+    {
+      "id": "CAN-CAR-013",
+      "score": 0.8122523963562356,
+      "event_count": 1,
+      "title": "Known Next Job",
+      "path": "10-andi-car/current/KNOWN-NEXT-JOB.md"
+    },
+    {
+      "id": "CAN-BM-002",
+      "score": 0.7937005259840998,
+      "event_count": 1,
+      "title": "Executable Fixture Package",
+      "path": "20-storage-benchmark/frozen/EXECUTABLE-FIXTURE-PACKAGE.md"
+    },
+    {
+      "id": "CAN-BM-003",
+      "score": 0.7755723809168673,
+      "event_count": 1,
+      "title": "Proponent Pack",
+      "path": "20-storage-benchmark/frozen/PROPONENT-PACK.md"
+    }
+  ]
+}

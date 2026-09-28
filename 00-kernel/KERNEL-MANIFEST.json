@@ -1,0 +1,40 @@
+{
+  "manifest": "KERNEL-MANIFEST",
+  "version": "3.0",
+  "status": "INTERIM / REVERSIBLE / NON-CANDIDATE",
+  "generated": "2026-09-21",
+  "kernel_files": [
+    {
+      "file": "KERNEL.md",
+      "purpose": "Universal grounding kernel",
+      "always_load": true,
+      "actual_bytes": 910
+    },
+    {
+      "file": "SYSTEM-MAP.md",
+      "purpose": "Shallow whole-system map",
+      "always_load": true,
+      "actual_bytes": 4828
+    },
+    {
+      "file": "HOT-FILES.md",
+      "purpose": "Active-now shortcut (DERIVED from ACTIVITY_STATE)",
+      "always_load": true,
+      "actual_bytes": 1451
+    },
+    {
+      "file": "HOT-FILES.json",
+      "purpose": "Machine-readable hot-files (DERIVED)",
+      "always_load": false,
+      "actual_bytes": 2208
+    },
+    {
+      "file": "KERNEL-MANIFEST.json",
+      "purpose": "This manifest",
+      "always_load": false
+    }
+  ],
+  "total_always_load_bytes": 7189,
+  "activity_algorithm": "V3 location-concentration ranking from ACTIVITY_STATE.json",
+  "activity_source": "90-registers/ACTIVITY_STATE.json"
+}

@@ -1,0 +1,70 @@
+{
+  "register": "HUMAN_REVIEW_REGISTER",
+  "created": "2026-09-21",
+  "pass": 1,
+  "entries": [
+    {
+      "id": "HR-001",
+      "class": "UNRESOLVED",
+      "subject": "SRC-007 / SRC-011 overlap",
+      "description": "Andi Car Exact Transcript (SRC-007, 6577b) and Andi Car conversation checkpoint 13 Sep (SRC-011, 3450b) both record the same CIF-read-without-compliance incident on 13 September 2026. SRC-007 contains more complete raw transcript. SRC-011 contains a summarized version plus a checkpoint summary paragraph. Both are original evidence of the same event.",
+      "recommendation": "Retain both as independent evidence records. SRC-007 is the fuller transcript; SRC-011 adds a unique checkpoint summary. Neither should be merged or deleted. Canonical reference for this failure incident should point to SRC-007 as primary evidence with SRC-011 as supplementary.",
+      "risk": "LOW - both are historical evidence, not competing live authority",
+      "human_decision_needed": "Confirm whether both should remain or whether SRC-011 can be marked as a subset of SRC-007"
+    },
+    {
+      "id": "HR-002",
+      "class": "UNRESOLVED",
+      "subject": "SRC-002 massive append-only growth",
+      "description": "Andi Car Authoritative Current State (SRC-002) is 264,742 bytes - 25.7% of the entire corpus. It functions as the primary authority record but contains the full chronological decision evolution from 6 Sep to 19 Sep appended in sequence. Much of its content is historical rationale that also appears (in different form) in SRC-013 Control Centre and various checkpoint documents.",
+      "recommendation": "This is the core problem the preservation must address. SRC-002 should be decomposed into: (a) a compact canonical current-state record, (b) chronological decision/architecture sections as separate canonical records, (c) cross-references replacing inline duplication. The original SRC-002 must be retained as historical evidence.",
+      "risk": "HIGH - this single file dominates grounding cost and contains both current authority and historical narrative",
+      "human_decision_needed": "Approve decomposition approach during PASS 3 target model"
+    },
+    {
+      "id": "HR-003",
+      "class": "UNRESOLVED",
+      "subject": "SRC-013 / SRC-002 overlapping historical content",
+      "description": "Control Centre (SRC-013, 99KB) and Authoritative Current State (SRC-002, 265KB) both contain substantial Andi Car development history from September 2026. SRC-013 was explicitly superseded as the front-door by SRC-002 but retains unique historical detail. SRC-002 contains later material not in SRC-013. Some decision rationale appears in both documents in different forms.",
+      "recommendation": "Keep both as historical evidence. During construction (PASS 4), identify which decisions/rationale sections are unique to each and which genuinely duplicate. Create canonical records for shared decisions, reference from both historical documents.",
+      "risk": "MEDIUM - affects canonical record identification in PASS 2/3",
+      "human_decision_needed": "Confirm that SRC-013 should be retained in full as historical evidence even where it overlaps SRC-002"
+    },
+    {
+      "id": "HR-004",
+      "class": "UNRESOLVED",
+      "subject": "Benchmark checkpoint version chain",
+      "description": "The storage benchmark has multiple overlapping checkpoint documents: SRC-017 (16 Sep full CIF audit handover), SRC-016 (17 Sep Phase-5 fairness handover), SRC-027 (17 Sep Pre-Manufacture + Gemini rulings), SRC-028 (17 Sep Pre-Opus handover), SRC-020 (17 Sep Opus construction). Each is a recovery snapshot that partially restates frozen state from predecessors. The latest authoritative handover is SRC-016 per the Status Register.",
+      "recommendation": "These form a version chain, not duplicates. Each checkpoint captures a different moment. Preserve all. Create a chronological version-chain relationship. The Status Register (SRC-034) is the front-door authority for which checkpoint is current.",
+      "risk": "LOW - they are correctly dated and sequenced; the overlap is deliberate recovery design",
+      "human_decision_needed": "None required if version-chain treatment is accepted"
+    },
+    {
+      "id": "HR-005",
+      "class": "UNRESOLVED",
+      "subject": "CIF terminology evolution",
+      "description": "Multiple CIF-related terms appear across the corpus: CI, CIF, Full CIF, CIF SYNC, Project CIF, Execution CIF, Megalodon CIF, Car CIF, Lab CIF. Per governing brief Section 38.1, these represent terminology evolution and must not be silently normalized. The Operating Standard (SRC-004) contains the established definitions. Other variants are contextual or proposed.",
+      "recommendation": "Preserve historical terminology as-is. In the machine navigation tree, note the established definitions from SRC-004 and flag variant uses as historical evidence of evolution. Do not create a single canonical glossary entry that claims all variants mean the same thing.",
+      "risk": "MEDIUM - a future Driver could confuse variant CIF meanings",
+      "human_decision_needed": "Confirm whether a terminology evolution timeline should be a separate deliverable"
+    },
+    {
+      "id": "HR-006",
+      "class": "UNRESOLVED",
+      "subject": "SRC-039 zero-byte placeholder",
+      "description": "DeepSeek V4 Pro Manufacturer Dispatch (SRC-039) is a 0-byte file. SHA-256 matches empty file. Its existence in the Lab history suggests a dispatch was planned or started but no content was written.",
+      "recommendation": "Preserve as-is. The zero-byte state is itself evidence (planned but unexecuted, or content not yet created). Do not delete or fill with inferred content.",
+      "risk": "LOW",
+      "human_decision_needed": "None"
+    },
+    {
+      "id": "HR-007",
+      "class": "UNRESOLVED",
+      "subject": "Authority conflict: SRC-002 updated date vs SRC-003 reconciled date",
+      "description": "Authoritative Current State (SRC-002) states 'Updated: 9 September 2026' at the top but contains material through 19 September 2026. Chronological Spine (SRC-003) states 'Reconciled: 15 September 2026' but contains entries through 19 September. Both documents were clearly updated after their stated dates without the header date being changed.",
+      "recommendation": "Record the discrepancy. The actual content dates (through 19 Sep) are more reliable than the header dates. This is a maintenance hygiene issue, not a content authority conflict. Note in provenance metadata.",
+      "risk": "LOW - content dates are clear from internal evidence",
+      "human_decision_needed": "None required for preservation; note for future maintenance"
+    }
+  ]
+}

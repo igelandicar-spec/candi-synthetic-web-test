@@ -1,0 +1,120 @@
+{
+  "report": "INTEGRITY_REPORT",
+  "version": "3.0",
+  "generated": "2026-09-21",
+  "status": "INTERIM / REVERSIBLE / NON-CANDIDATE",
+  "checks": [
+    {
+      "check": "S1: Directory structure",
+      "result": "PASS",
+      "detail": "All 20 dirs present"
+    },
+    {
+      "check": "S2: Kernel files",
+      "result": "PASS",
+      "detail": "All 5 present+nonempty"
+    },
+    {
+      "check": "S3: Canonical records on disk",
+      "result": "PASS",
+      "detail": "All 22 resolve"
+    },
+    {
+      "check": "S4: Provenance markers",
+      "result": "PASS",
+      "detail": "46/46"
+    },
+    {
+      "check": "S5: ID consistency across tree/register/index",
+      "result": "PASS",
+      "detail": "22 IDs match"
+    },
+    {
+      "check": "S6: Single-truth activity source",
+      "result": "PASS",
+      "detail": "All three indexes reference ACTIVITY_STATE.json"
+    },
+    {
+      "check": "S7: Band consistency (tree vs activity state)",
+      "result": "PASS",
+      "detail": "All 22 match"
+    },
+    {
+      "check": "S8: CIF wording boundary (J)",
+      "result": "PASS",
+      "detail": "No CIF-redefining language"
+    },
+    {
+      "check": "S9: Zero-byte file preserved",
+      "result": "PASS",
+      "detail": "0 bytes"
+    },
+    {
+      "check": "S10: Required deliverables",
+      "result": "PASS",
+      "detail": "All 18 present"
+    },
+    {
+      "check": "S11: V3 new files",
+      "result": "PASS",
+      "detail": "Maintenance contract + bounded history growth present"
+    },
+    {
+      "check": "VA: Repeated work concentrates activity",
+      "result": "PASS",
+      "detail": "CAN-LAB-002 weight=3 (HOT) > CAN-BM-002 weight=1 (WARM). Concentration works."
+    },
+    {
+      "check": "VB: COLD reactivation capability",
+      "result": "PASS",
+      "detail": "CAN-CAR-004 is COLD (weight=0). Algorithm design: new event gives weight>=1, enters ranking. If only 1 new event: weight=1 may or may not reach top-5 depending on competition. If sustained reactivation: weight accumulates rapidly. Design principle 5 confirms immediate reactivation. No cooling penalty or dormancy delay."
+    },
+    {
+      "check": "VC: Clerical non-heating",
+      "result": "PASS",
+      "detail": "Design principle 4 + what_counts_as_meaningful_activity.does_NOT_count explicitly excludes file rename, formatting, timestamp, metadata, sync, archive manufacture, clerical register update. These are NEVER logged as events, so they contribute zero weight."
+    },
+    {
+      "check": "VD: Incremental new project/record addition",
+      "result": "PASS",
+      "detail": "MAINTENANCE-CONTRACT.md section 1 \"Adding a new canonical record\" defines 6-step incremental procedure. No corpus reconstruction needed. Forward maintenance also covers new project/branch."
+    },
+    {
+      "check": "VE: Large leaf decomposition without breaking references",
+      "result": "PASS",
+      "detail": "MAINTENANCE-CONTRACT.md section 1 \"Decomposing a large canonical record\" defines 6-step procedure: create child records with new IDs; original becomes index or superseded marker retaining its ID; ALL inbound references remain valid; provenance markers not deleted; relationships updated."
+    },
+    {
+      "check": "VF: Derived view recovery from sources",
+      "result": "PASS",
+      "detail": "MAINTENANCE-CONTRACT defines: HOT-FILES from ACTIVITY_STATE+register (sec 7); SYSTEM-MAP from register+activity (sec 6); MACHINE-TREE bands from ACTIVITY_STATE (sec 10); RETRIEVAL-INDEX from register+activity+fs (sec 11). Loss of any derived view does NOT lose canonical knowledge. SOURCE-OF-TRUTH MATRIX and LOSS-IMPACT SUMMARY confirm: only canonical records and MACHINE-TREE relationships are non-regenerable authoritative state."
+    },
+    {
+      "check": "VG: Incremental history addition",
+      "result": "PASS",
+      "detail": "BOUNDED-HISTORY-GROWTH.md defines: timeline is APPEND-ONLY (new entries at bottom); narrative growth by appending new chapters; splitting procedure when thresholds reached; current files well within thresholds (timeline ~9.3KB, narrative ~14.4KB). A Driver adds a milestone without rereading the whole history corpus."
+    },
+    {
+      "check": "VH: Selective retrieval route",
+      "result": "PASS",
+      "detail": "Route: KERNEL.md (4786b) -> SYSTEM-MAP.md (8670b) -> HOT-FILES.md (2098b) -> relevant branch -> canonical record -> provenance. Progressive retrieval procedure defines 7 stages. No stage loads unrelated project corpus. Retrieval depth per branch is determined by task relevance, not preloaded."
+    },
+    {
+      "check": "VI: Human/machine view canonical ID consistency (I)",
+      "result": "PASS",
+      "detail": "21 CAN-IDs in PROJECT-TREE; all in MACHINE-TREE"
+    },
+    {
+      "check": "VJ: CIF terminology preserved (J)",
+      "result": "PASS",
+      "detail": "S8 confirmed no CIF-redefining language. Progressive retrieval document explicitly states it operates alongside established CI/CIF and does NOT replace/redefine Full CIF."
+    }
+  ],
+  "summary": {
+    "total": 21,
+    "pass": 21,
+    "warn": 0,
+    "fail": 0,
+    "overall": "PASS"
+  }
+}

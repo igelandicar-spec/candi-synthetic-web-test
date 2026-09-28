@@ -1,0 +1,369 @@
+{
+  "register": "RECONCILIATION_REGISTER",
+  "created": "2026-09-21",
+  "pass": 2,
+  "version_chains": [
+    {
+      "chain_id": "VC-001",
+      "subject": "Andi Car front-door authority evolution",
+      "chain": [
+        {
+          "id": "SRC-013",
+          "role": "original_master",
+          "date": "2026-09-03",
+          "note": "Control Centre - original append-only master, 99KB"
+        },
+        {
+          "id": "SRC-002",
+          "role": "successor_master",
+          "date": "2026-09-06",
+          "note": "Authoritative Current State - replaced SRC-013 as front-door, itself grew to 265KB via append"
+        }
+      ],
+      "relationship": "SRC-002 supersedes SRC-013 as front-door authority. SRC-013 explicitly marked as historical rationale. Both contain overlapping Sep 3-9 history in different forms.",
+      "status": "CLEAR_SUPERSESSION"
+    },
+    {
+      "chain_id": "VC-002",
+      "subject": "Storage benchmark checkpoint chain",
+      "chain": [
+        {
+          "id": "SRC-029",
+          "role": "design_checkpoint",
+          "date": "2026-09-16",
+          "note": "Benchmark Design Checkpoint - v1.2 methodology source"
+        },
+        {
+          "id": "SRC-022",
+          "role": "capture_checkpoint",
+          "date": "2026-09-16",
+          "note": "Phase 0 Candidate Capture"
+        },
+        {
+          "id": "SRC-023",
+          "role": "freeze_checkpoint",
+          "date": "2026-09-16",
+          "note": "Phase 0 Freeze"
+        },
+        {
+          "id": "SRC-015",
+          "role": "execution_checkpoint",
+          "date": "2026-09-16",
+          "note": "OpenRouter Lab Proof"
+        },
+        {
+          "id": "SRC-017",
+          "role": "audit_handover",
+          "date": "2026-09-16",
+          "note": "Full CIF & Fixture Audit Handover"
+        },
+        {
+          "id": "SRC-016",
+          "role": "latest_handover",
+          "date": "2026-09-17",
+          "note": "Phase-5 Fairness Handover - CURRENT latest handover"
+        },
+        {
+          "id": "SRC-028",
+          "role": "pre_opus_handover",
+          "date": "2026-09-17",
+          "note": "Pre-Opus Implementation Handover"
+        },
+        {
+          "id": "SRC-020",
+          "role": "construction_checkpoint",
+          "date": "2026-09-17",
+          "note": "Opus Construction & Blockers"
+        },
+        {
+          "id": "SRC-027",
+          "role": "manufacturing_checkpoint",
+          "date": "2026-09-17",
+          "note": "Pre-Manufacture CI & Gemini Rulings + 18 Sep updates"
+        }
+      ],
+      "relationship": "Progressive checkpoint chain. Each captures a recovery snapshot. Later checkpoints partially restate frozen state from predecessors. SRC-034 (Status Register) is the front-door authority for which is current. NOT duplicates - each is a distinct recovery point.",
+      "status": "VERSION_CHAIN"
+    },
+    {
+      "chain_id": "VC-003",
+      "subject": "Lab translator evolution",
+      "chain": [
+        {
+          "id": "SRC-038",
+          "role": "stage_0_contract",
+          "date": "2026-09-19",
+          "note": "Control Contract & Stage 0 Commissioning"
+        },
+        {
+          "id": "SRC-036",
+          "role": "protocol_design",
+          "date": "2026-09-19",
+          "note": "Command Protocol Design (ANDI-MSG/1)"
+        },
+        {
+          "id": "SRC-045",
+          "role": "v02_design",
+          "date": "2026-09-19",
+          "note": "Translator v0.2 Stage 2 Capability Design + diagnostic expansion"
+        },
+        {
+          "id": "SRC-041",
+          "role": "first_light",
+          "date": "2026-09-19",
+          "note": "First Light & Declarative Control - PING/IDENTITY proven"
+        },
+        {
+          "id": "SRC-042",
+          "role": "recovery_1",
+          "date": "2026-09-19",
+          "note": "Fresh Driver Recovery Checkpoint"
+        },
+        {
+          "id": "SRC-043",
+          "role": "recovery_2",
+          "date": "2026-09-19",
+          "note": "Fresh Driver Recovery - External Manufacture Route"
+        },
+        {
+          "id": "SRC-040",
+          "role": "manufacturing_package",
+          "date": "2026-09-19",
+          "note": "External Translator Manufacturing & Recovery Package - FROZEN"
+        }
+      ],
+      "relationship": "Sequential Lab commissioning chain. v0.1->v0.2->v0.3->v0.4->v0.5->v0.5.1 evolution documented across these records plus the Operator Record (SRC-044).",
+      "status": "VERSION_CHAIN"
+    },
+    {
+      "chain_id": "VC-004",
+      "subject": "CIF-failure evidence chain",
+      "chain": [
+        {
+          "id": "SRC-012",
+          "role": "first_observed",
+          "date": "2026-09-09",
+          "note": "Warm Driver CIF Failure - false completion claim"
+        },
+        {
+          "id": "SRC-007",
+          "role": "second_observed",
+          "date": "2026-09-13",
+          "note": "Exact Transcript - CIF read without compliance"
+        },
+        {
+          "id": "SRC-011",
+          "role": "summarized_second",
+          "date": "2026-09-13",
+          "note": "Conversation checkpoint - same incident as SRC-007, summarized"
+        }
+      ],
+      "relationship": "Independent CIF failure observations forming a failure-evidence chain. SRC-012 is a different incident (false CIF claim) from SRC-007/SRC-011 (CIF read without execution). SRC-007 and SRC-011 document the SAME incident with different completeness.",
+      "status": "EVIDENCE_CHAIN"
+    }
+  ],
+  "duplicate_analysis": [
+    {
+      "dup_id": "DUP-001",
+      "subjects": [
+        "SRC-007",
+        "SRC-011"
+      ],
+      "type": "PARTIAL_OVERLAP",
+      "description": "Same 13 Sep incident. SRC-007 has fuller raw transcript. SRC-011 has unique checkpoint summary paragraph. Not exact duplicates.",
+      "recommendation": "RETAIN BOTH. SRC-007 is primary evidence. SRC-011 adds unique context. Canonical reference for the incident should be SRC-007. Cross-reference from SRC-011.",
+      "canonical_candidate": "SRC-007"
+    },
+    {
+      "dup_id": "DUP-002",
+      "subjects": [
+        "SRC-002",
+        "SRC-013"
+      ],
+      "type": "OVERLAPPING_HISTORY",
+      "description": "Both contain Andi Car development history for Sep 3-9. SRC-013 is the original venue; SRC-002 restates/expands it. SRC-002 also contains Sep 9-19 material not in SRC-013. SRC-013 contains early Control Centre framing not replicated in SRC-002.",
+      "recommendation": "RETAIN BOTH COMPLETE. Decompose SRC-002 into canonical topic records during PASS 4 construction. SRC-013 remains as the original historical master. Cross-references replace needing to read both.",
+      "canonical_candidate": "DECOMPOSE_SRC002"
+    }
+  ],
+  "cross_project_dependencies": [
+    {
+      "dep_id": "DEP-001",
+      "from_project": "STORAGE_BENCHMARK",
+      "to_project": "ANDI_CAR",
+      "type": "depends_on",
+      "description": "Storage benchmark exists to select Andi Car's permanent storage architecture. Benchmark methodology, candidates and evaluation all serve the Car project."
+    },
+    {
+      "dep_id": "DEP-002",
+      "from_project": "ANDI_LAB",
+      "to_project": "STORAGE_BENCHMARK",
+      "type": "supports",
+      "description": "Lab MK1 was built partly to execute benchmark manufacturing and testing. Lab provides execution infrastructure for benchmark work."
+    },
+    {
+      "dep_id": "DEP-003",
+      "from_project": "ANDI_LAB",
+      "to_project": "ANDI_CAR",
+      "type": "supports",
+      "description": "Lab is external support infrastructure for Car development. Intended to eventually be replaced by Car-native capability."
+    },
+    {
+      "dep_id": "DEP-004",
+      "from_project": "IGEL",
+      "to_project": "ANDI_CAR",
+      "type": "hosts",
+      "description": "IGEL is the physical prototype chassis for Andi Car. Hardware reconnaissance, installation and proven infrastructure live on this machine."
+    },
+    {
+      "dep_id": "DEP-005",
+      "from_project": "ANDI_PRESERVATION",
+      "to_project": "ANDI_CAR",
+      "type": "serves",
+      "description": "Preservation exists to make Car history navigable. Sits outside Car authority. Car should contain only a discoverable pointer to preservation."
+    },
+    {
+      "dep_id": "DEP-006",
+      "from_project": "ANDI_GLOBAL",
+      "to_project": "ANDI_CAR",
+      "type": "governs",
+      "description": "Operating Standard and Working Profile govern all projects including Car. They are universal, not Car-specific."
+    },
+    {
+      "dep_id": "DEP-007",
+      "from_project": "ANDI_GLOBAL",
+      "to_project": "ANDI_LAB",
+      "type": "governs",
+      "description": "Operating Standard governs Lab operations. Lab has additional local governance (Operator Record, Control Contract) but global rules apply."
+    }
+  ],
+  "shared_concepts": [
+    {
+      "concept_id": "SC-001",
+      "name": "THE INTELLIGENCE VISITS. THE CAR PERSISTS.",
+      "type": "core_maxim",
+      "appears_in": [
+        "SRC-002",
+        "SRC-003",
+        "SRC-004",
+        "SRC-013",
+        "SRC-024",
+        "SRC-029"
+      ],
+      "canonical_home": "SRC-002 (Authoritative Current State) for project meaning; SRC-004 (Operating Standard) for operational application"
+    },
+    {
+      "concept_id": "SC-002",
+      "name": "THE AI PROPOSES; THE CAR COMMITS.",
+      "type": "core_maxim",
+      "appears_in": [
+        "SRC-002",
+        "SRC-003",
+        "SRC-004",
+        "SRC-013",
+        "SRC-024"
+      ],
+      "canonical_home": "SRC-002 for project meaning; SRC-004 for operational application"
+    },
+    {
+      "concept_id": "SC-003",
+      "name": "Pre-commit Full CIF gate",
+      "type": "governance_mechanism",
+      "appears_in": [
+        "SRC-002",
+        "SRC-004",
+        "SRC-005",
+        "SRC-014",
+        "SRC-001"
+      ],
+      "canonical_home": "SRC-004 (Operating Standard)",
+      "note": "Repeated in file headers as mandatory gate. This is deliberate redundancy for safety, not duplication to eliminate."
+    },
+    {
+      "concept_id": "SC-004",
+      "name": "DAVE quarantine",
+      "type": "exclusion_rule",
+      "appears_in": [
+        "SRC-002",
+        "SRC-004",
+        "SRC-006",
+        "SRC-046",
+        "SRC-037"
+      ],
+      "canonical_home": "SRC-004 (Operating Standard)",
+      "note": "Repeated across documents. This repetition is deliberate safety reinforcement."
+    },
+    {
+      "concept_id": "SC-005",
+      "name": "Warm-driver provenance failure",
+      "type": "discovered_failure_mode",
+      "appears_in": [
+        "SRC-002",
+        "SRC-004",
+        "SRC-007",
+        "SRC-011",
+        "SRC-012",
+        "SRC-013",
+        "SRC-014",
+        "SRC-029"
+      ],
+      "canonical_home": "Evidence: SRC-012 + SRC-007. Policy response: SRC-004.",
+      "note": "This concept evolved from observed failures into architectural requirements. The evidence chain (SRC-012, SRC-007) and policy response (SRC-004 grounding rules) must both be preserved."
+    },
+    {
+      "concept_id": "SC-006",
+      "name": "Frozen benchmark state",
+      "type": "benchmark_governance",
+      "appears_in": [
+        "SRC-015",
+        "SRC-016",
+        "SRC-017",
+        "SRC-019",
+        "SRC-020",
+        "SRC-021",
+        "SRC-022",
+        "SRC-023",
+        "SRC-024",
+        "SRC-025",
+        "SRC-026",
+        "SRC-027",
+        "SRC-028",
+        "SRC-029",
+        "SRC-033",
+        "SRC-034"
+      ],
+      "canonical_home": "SRC-034 (Status Register) is front-door for current frozen state. SRC-033 (Executable Fixture Package) is the execution manifest.",
+      "note": "Multiple documents restate frozen state for recovery purposes. The Status Register (SRC-034) is the single authority for what is frozen."
+    }
+  ],
+  "supersession_records": [
+    {
+      "sup_id": "SUP-001",
+      "superseded": "SRC-013",
+      "superseded_by": "SRC-002",
+      "scope": "As front-door current state authority",
+      "note": "SRC-013 remains valid as historical record. It was not invalidated, only replaced as the first-read source for current truth."
+    },
+    {
+      "sup_id": "SUP-002",
+      "superseded": "SRC-017",
+      "superseded_by": "SRC-016",
+      "scope": "As latest complete handover checkpoint for benchmark",
+      "note": "SRC-017 (16 Sep) was the latest handover. SRC-016 (17 Sep) superseded it. Both remain valid recovery points for their respective dates."
+    },
+    {
+      "sup_id": "SUP-003",
+      "superseded": "Runner v0.1/v0.2 executable-job route",
+      "superseded_by": "ANDI-MSG/1 declarative translator",
+      "scope": "As Lab control mechanism",
+      "note": "Documented in SRC-037 governed commissioning update. Runner route preserved as evidence."
+    }
+  ],
+  "orphan_check": [
+    {
+      "id": "SRC-039",
+      "status": "ZERO_BYTE_PLACEHOLDER",
+      "note": "Intentional zero-byte file. Preserved as evidence of planned-but-unexecuted dispatch."
+    }
+  ]
+}

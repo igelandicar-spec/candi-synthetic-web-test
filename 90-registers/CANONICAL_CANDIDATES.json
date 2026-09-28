@@ -1,0 +1,269 @@
+{
+  "register": "CANONICAL_RECORD_CANDIDATES",
+  "created": "2026-09-21",
+  "pass": 2,
+  "note": "These are CANDIDATES for canonical records to be created in PASS 4. The decomposition of SRC-002 is the most significant proposed change.",
+  "governance_canonical": [
+    {
+      "can_id": "CAN-GOV-001",
+      "title": "Operating Standard",
+      "source": "SRC-004",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Already a single authoritative record. No decomposition needed. 46KB is large but it is universal governance that must remain unified."
+    },
+    {
+      "can_id": "CAN-GOV-002",
+      "title": "Working Profile",
+      "source": "SRC-005",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Already a single authoritative record. 24KB. Unified cross-project document."
+    },
+    {
+      "can_id": "CAN-GOV-003",
+      "title": "Preservation Governing Specification",
+      "source": "SRC-001",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Already a single authoritative record for the preservation project."
+    },
+    {
+      "can_id": "CAN-GOV-004",
+      "title": "Corpus README / Boundaries",
+      "source": "SRC-006",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Preservation-specific corpus rules."
+    },
+    {
+      "can_id": "CAN-GOV-005",
+      "title": "Exclusions Record",
+      "source": "SRC-046",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Preservation exclusions. Small and specific."
+    }
+  ],
+  "andi_car_decomposition": {
+    "source": "SRC-002",
+    "source_bytes": 264742,
+    "problem": "265KB append-only master containing current authority + full chronological evolution. Loading it all for routine grounding is the core CIF cost problem.",
+    "proposed_decomposition": [
+      {
+        "can_id": "CAN-CAR-001",
+        "title": "Andi Car \u2014 Compact Current State",
+        "content_source": "SRC-002 top sections: PROJECT ID, OBJECTIVE, CORE MAXIMS, CURRENT STATE, CONFIRMED FACTS, CORRECTIONS, DECISIONS, REJECTED ROUTES, OPEN QUESTIONS, NEXT ACTION, IMPORTANT CONSTRAINTS",
+        "estimated_size": "~3-5KB",
+        "authority": "current_authoritative",
+        "retrieval_band": "HOT \u2014 always loaded for Car work",
+        "note": "This is the SMALL FRONT DOOR the project has always wanted. Extract only genuinely current operative state."
+      },
+      {
+        "can_id": "CAN-CAR-002",
+        "title": "Andi Car \u2014 Direction Refinements (6 Sep 2026)",
+        "content_source": "SRC-002: Direction Refinement, Cross-Platform, Core Architecture Separation, Core Memory Governance, Multi-Intelligence/Guest-Speaker, User-Led Design, Bottom-Up/Basic-AI, Lean Core, IGEL Design Constraint sections",
+        "estimated_size": "~12-15KB",
+        "authority": "current_authoritative",
+        "retrieval_band": "WARM \u2014 load for architecture/design questions"
+      },
+      {
+        "can_id": "CAN-CAR-003",
+        "title": "Andi Car \u2014 Guest Review Adjudications (6 Sep 2026)",
+        "content_source": "SRC-002: Guest Review #1 adjudication, Guest Review #2 adjudication, DAVE V0 results 001/002",
+        "estimated_size": "~8-10KB",
+        "authority": "historical_record",
+        "retrieval_band": "COOL \u2014 load when reviewing benchmark/validation history"
+      },
+      {
+        "can_id": "CAN-CAR-004",
+        "title": "Andi Car \u2014 Communication & Transport Evolution (7-11 Sep 2026)",
+        "content_source": "SRC-002: Visible Check rule, Forced Periodic Refresh, Early IGEL Car, Audit Monitor, Minimum Viable Car, Commit-Now rule, Two-Tier Prompt, Review #2 Follow-Up, Remote Car Tool-Surface, CIF Checkpoint 8 Sep, Command-Window Adapter, Machine-Native State Surface, Universal Web I/O, Scoped Visiting-AI Access, Browser Automation, Dual-Door, Cross-AI Web Doorway, IGEL/Linux Next-Build, Drive Bridge tests, Gmail Draft transport, Dropbox responder, Hybrid Read-Heavy Web, Post-CIF Ratification, Car-Verified Grounding, Dedicated Gmail Account, Named Web Read-Path, Claude Direct Fetch, Parallel Search, Post-CIF Communication Reassessment, Post-CIF Dropbox, Drive-Like Contract, JSON Transport, Work Checkpoint, CIF Benchmark results, Grounding Package/Receipt Investigation, Dropbox Rename, Chat-Window Eyes/Grounding, Execution CIF, Two-Word Receipt, Post-CIF Human Control Surface, Mobile Grounding, Bounded Work, Dropbox API Decision, Security/Recovery, Transport Access Security, Token-Aware Context Refresh, Memory/Chat Health Controls, Hosted Chat Workspace, Two-Counter Health, Lab Communication Note",
+        "estimated_size": "~180-200KB",
+        "authority": "historical_record",
+        "retrieval_band": "COLD \u2014 load only when investigating transport/communication architecture history",
+        "note": "This is the BULK of SRC-002. It is valuable engineering history but should NEVER be routine grounding material. This alone justifies the decomposition."
+      }
+    ],
+    "original_preserved_as": "SRC-002 retained in full as historical evidence. Decomposition creates new navigable canonical records; it does not delete the source."
+  },
+  "andi_car_other_canonical": [
+    {
+      "can_id": "CAN-CAR-010",
+      "title": "Chronological Spine & Status Register",
+      "source": "SRC-003",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Already serves as navigation layer. 18KB. Could benefit from activity-state annotations but structure is sound."
+    },
+    {
+      "can_id": "CAN-CAR-011",
+      "title": "Grounding Implementation Checkpoint",
+      "source": "SRC-008",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Specific implementation record. 9KB. Current working material."
+    },
+    {
+      "can_id": "CAN-CAR-012",
+      "title": "IGEL Hardware & Installation",
+      "source": "SRC-014",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Hardware authority. 32KB. Contains proven installation state, architecture notes, milestone results."
+    },
+    {
+      "can_id": "CAN-CAR-013",
+      "title": "Known Next Job \u2014 PowerShell Access",
+      "source": "SRC-018",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Current planning record for test execution access."
+    }
+  ],
+  "benchmark_canonical": [
+    {
+      "can_id": "CAN-BM-001",
+      "title": "Benchmark Status Register (FRONT DOOR)",
+      "source": "SRC-034",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Already the designated front-door for benchmark status. 16KB."
+    },
+    {
+      "can_id": "CAN-BM-002",
+      "title": "Executable Fixture Package (FROZEN)",
+      "source": "SRC-033",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Frozen execution manifest. Must not be modified."
+    },
+    {
+      "can_id": "CAN-BM-003",
+      "title": "Phase 0 Proponent Pack (FROZEN)",
+      "source": "SRC-024",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Frozen common proponent base prompt + appendices."
+    },
+    {
+      "can_id": "CAN-BM-004",
+      "title": "Phase 5 Destructive Recovery Contract (FROZEN)",
+      "source": "SRC-025",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Frozen Phase-5 mechanics."
+    },
+    {
+      "can_id": "CAN-BM-005",
+      "title": "Post-Phase-0 Execution Policy (FROZEN)",
+      "source": "SRC-026",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Frozen execution policy."
+    },
+    {
+      "can_id": "CAN-BM-006",
+      "title": "Implementation Clarifications (FROZEN)",
+      "source": "SRC-021",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Frozen implementation clarifications for Opus lab."
+    },
+    {
+      "can_id": "CAN-BM-007",
+      "title": "Benchmark Design Checkpoint (v1.2 source)",
+      "source": "SRC-029",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Primary source for frozen v1.2 methodology. 30KB."
+    },
+    {
+      "can_id": "CAN-BM-008",
+      "title": "Phase 0 Freeze Checkpoint",
+      "source": "SRC-023",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Formal Phase 0 freeze record."
+    }
+  ],
+  "benchmark_historical": [
+    {
+      "can_id": "CAN-BM-H01",
+      "title": "Benchmark checkpoint chain",
+      "sources": [
+        "SRC-015",
+        "SRC-016",
+        "SRC-017",
+        "SRC-019",
+        "SRC-020",
+        "SRC-022",
+        "SRC-027",
+        "SRC-028"
+      ],
+      "action": "RETAIN_ALL_AS_HISTORY",
+      "note": "Recovery checkpoint chain. Each is a distinct moment. Version-chain relationship VC-002."
+    }
+  ],
+  "evidence_canonical": [
+    {
+      "can_id": "CAN-EV-001",
+      "title": "Guest Review: Gemini Pro Extended (6 Sep)",
+      "source": "SRC-010",
+      "action": "RETAIN_AS_EVIDENCE"
+    },
+    {
+      "can_id": "CAN-EV-002",
+      "title": "Guest Review: Gemini Benchmark Design (6 Sep)",
+      "source": "SRC-009",
+      "action": "RETAIN_AS_EVIDENCE"
+    },
+    {
+      "can_id": "CAN-EV-003",
+      "title": "DeepSeek V4 Pro External Review (15 Sep)",
+      "source": "SRC-030",
+      "action": "RETAIN_AS_EVIDENCE",
+      "note": "102KB external review. Major evidence for storage architecture direction."
+    },
+    {
+      "can_id": "CAN-EV-004",
+      "title": "Gemini Phase 0 Compliance Referee",
+      "source": "SRC-035",
+      "action": "RETAIN_AS_EVIDENCE"
+    },
+    {
+      "can_id": "CAN-EV-005",
+      "title": "CIF Failure Evidence Chain",
+      "sources": [
+        "SRC-007",
+        "SRC-011",
+        "SRC-012"
+      ],
+      "action": "RETAIN_ALL_AS_EVIDENCE",
+      "note": "Independent failure observations. SRC-007 is primary for the 13 Sep incident."
+    }
+  ],
+  "lab_canonical": [
+    {
+      "can_id": "CAN-LAB-001",
+      "title": "Lab MK1 \u2014 Concept & Plan",
+      "source": "SRC-037",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Lab plan with governed commissioning update."
+    },
+    {
+      "can_id": "CAN-LAB-002",
+      "title": "Lab MK1 \u2014 Operator & Recovery Record",
+      "source": "SRC-044",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Primary Lab operating manual. 28KB. Contains full translator evolution, control procedures, commissioning evidence, grounding interlock design."
+    },
+    {
+      "can_id": "CAN-LAB-003",
+      "title": "Lab MK1 \u2014 External Translator Manufacturing Package (FROZEN)",
+      "source": "SRC-040",
+      "action": "RETAIN_AS_CANONICAL",
+      "note": "Frozen manufacturing specification. 24KB."
+    }
+  ],
+  "lab_historical": [
+    {
+      "can_id": "CAN-LAB-H01",
+      "title": "Lab commissioning chain",
+      "sources": [
+        "SRC-036",
+        "SRC-038",
+        "SRC-041",
+        "SRC-042",
+        "SRC-043",
+        "SRC-045",
+        "SRC-039"
+      ],
+      "action": "RETAIN_ALL_AS_HISTORY",
+      "note": "Sequential Lab commissioning evidence per VC-003."
+    }
+  ]
+}
